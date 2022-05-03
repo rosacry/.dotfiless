@@ -374,8 +374,11 @@ let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
 let s:palette.inactive.middle = s:palette.normal.middle
 let s:palette.tabline.middle = s:palette.normal.middle
 "NerdTree commands
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-m> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-w> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
+"Rebinding "*y to y
+noremap y "*y
+"Switch between window splits
+"wincmd is the vimscript equivalent to Ctrlw in normal mode.
+"In normal mode when you change of window you can use Ctrlw + p to come back to the previous window. So in vimscript you simply use:

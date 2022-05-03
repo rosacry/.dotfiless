@@ -147,8 +147,7 @@ let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
 let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
 let s:palette.inactive.middle = s:palette.normal.middle
 let s:palette.tabline.middle = s:palette.normal.middle
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-m> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-w> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
+noremap y "*y
