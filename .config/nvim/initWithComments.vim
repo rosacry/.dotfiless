@@ -381,4 +381,4 @@ let NERDTreeShowHidden=1
 noremap y "*y
 "Switch between window splits
 "wincmd is the vimscript equivalent to Ctrlw in normal mode.
-"In normal mode when you change of window you can use Ctrlw + p to come back to the previous window. So in vimscript you simply use:
+"In normal mode when you change of window you can use Ctrlw + p to come back to the previous window.
