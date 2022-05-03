@@ -373,7 +373,7 @@ let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
 let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
 let s:palette.inactive.middle = s:palette.normal.middle
 let s:palette.tabline.middle = s:palette.normal.middle
-"NerdTree commands
+"NerdTree commands press "?" to show help
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-w> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1

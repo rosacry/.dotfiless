@@ -35,3 +35,9 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+# git add, commit and push commands in one line :)
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
