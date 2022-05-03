@@ -148,6 +148,6 @@ let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
 let s:palette.inactive.middle = s:palette.normal.middle
 let s:palette.tabline.middle = s:palette.normal.middle
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-w> :NERDTreeCWD<CR>
+nnoremap <C-h> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
 noremap y "*y
