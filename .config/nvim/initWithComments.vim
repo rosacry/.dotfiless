@@ -88,6 +88,10 @@ Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 "EditorConfig helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
 Plug 'editorconfig/editorconfig-vim'
+"A vim plugin for working with git
+Plug 'github/copilot.vim'
+"a file system explorer for the Vim editor
+Plug 'preservim/nerdtree'
 " Initialize plugin system
 call plug#end()
 
@@ -344,6 +348,7 @@ set wrap linebreak
 "Ale - make sure to do pip3 install flake8
 let g:ale_linters= {
  \   'python': ['flake8'],
+ \   'cpp': ['cc', 'gcc', 'clang'],
  \}
 "must manually run command autofake to delete unused imports
 let g:ale_fixers = {
@@ -352,6 +357,12 @@ let g:ale_fixers = {
  \}
 " Set this variable to 1 to fix files when you save them.
 let g:ale_fix_on_save = 1
+" C++ lint thing I found on github lol
+let g:ale_pattern_options = { '\.h$': { 'ale_linters': { 'cpp' : ['cc', 'gcc', 'clang'] } } }
+let opts = '-std=c++17 -Wall -Wextra'
+let g:ale_cpp_cc_options    = opts
+let g:ale_cpp_gcc_options   = opts
+let g:ale_cpp_clang_options = opts
 "Customize the key mapping if you don't like the default.
 map K <Plug>(expand_region_expand)
 map J <Plug>(expand_region_shrink)

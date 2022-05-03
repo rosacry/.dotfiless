@@ -127,6 +127,7 @@ set wrap linebreak
 autocmd BufWritePre * :%s/\s\+$//e
 let g:ale_linters= {
  \   'python': ['flake8'],
+ \   'cpp': ['cc', 'gcc', 'clang'],
  \}
 let g:ale_fixers = {
  \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -135,7 +136,6 @@ let g:ale_fixers = {
 let g:ale_pattern_options_enabled = 1
 let g:ale_pattern_options = { '\.h$': { 'ale_linters': { 'cpp' : ['cc', 'gcc', 'clang'] } } }
 let opts = '-std=c++17 -Wall -Wextra'
-let g:ale_linters = { 'cpp': ['cc', 'gcc', 'clang'] }
 let g:ale_cpp_cc_options    = opts
 let g:ale_cpp_gcc_options   = opts
 let g:ale_cpp_clang_options = opts
