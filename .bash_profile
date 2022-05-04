@@ -44,3 +44,6 @@ function lazygit() {
 function p() {
   cd ..
 }
+function configs() {
+  cd prog/git/configs/
+}
