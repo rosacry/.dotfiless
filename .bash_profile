@@ -47,3 +47,6 @@ function p() {
 function configs() {
   cd prog/git/configs/
 }
+function u() {
+  brew update && brew upgrade
+}
