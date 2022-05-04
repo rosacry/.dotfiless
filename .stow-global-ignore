@@ -1,4 +1,1 @@
-# Comments and blank lines are allowed.
-
-\xmodmap.desktop
-\initWithComments.vim
+configs/.stow-global-ignore
