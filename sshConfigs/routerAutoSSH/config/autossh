@@ -1,6 +1,0 @@
-config autossh
-	option ssh	'-i /root/.ssh/bastion/ssh-key.pem -f -N -R 2224:localhost:22 ubuntu@ec2-54-89-248-100.compute-1.amazonaws.com'
-	option gatetime	'0'
-	option monitorport	'20000'
-	option poll	'600'
-	option enabled	'1'
