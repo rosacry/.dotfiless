@@ -45,8 +45,11 @@ function p() {
   cd ..
 }
 function configs() {
-  cd prog/git/configs/
+  cd ~/prog/git/configs/
 }
 function u() {
   brew update && brew upgrade
+}
+function c() {
+  clear
 }
