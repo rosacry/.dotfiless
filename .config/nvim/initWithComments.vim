@@ -92,6 +92,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'github/copilot.vim'
 "a file system explorer for the Vim editor
 Plug 'preservim/nerdtree'
+"outdated pluggin detector
+Plug 'semanser/vim-outdated-plugins'
 " Initialize plugin system
 call plug#end()
 

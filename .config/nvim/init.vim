@@ -15,6 +15,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'github/copilot.vim'
 Plug 'preservim/nerdtree'
+Plug 'semanser/vim-outdated-plugins'
 call plug#end()
 inoremap jk <ESC>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
