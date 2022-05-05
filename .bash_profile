@@ -45,7 +45,7 @@ function p() {
   cd ..
 }
 function configs() {
-  cd ~/prog/git/configs/
+  cd ~/prog/git/.dotfiles/
 }
 function u() {
   brew update && brew upgrade
