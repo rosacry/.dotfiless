@@ -37,7 +37,7 @@
 
 " Link of the many plugins I have : https://github.com/amix/vimrc
 " Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 "Conquer of of Complete (Snippet and text editing support)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
