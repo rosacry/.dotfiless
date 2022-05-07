@@ -57,10 +57,10 @@
       "KC_COMM",
       "KC_DOT",
       "KC_RSFT",
-      "KC_SLSH",
+      "MO(1)",
       "KC_NO",
-      "MO(1)",
-      "MO(1)",
+      "KC_SLSH",
+      "KC_LALT",
       "KC_NO",
       "KC_LGUI",
       "KC_NO",
@@ -70,10 +70,10 @@
       "KC_NO",
       "KC_RALT",
       "KC_RCTL",
-      "KC_LEFT",
-      "KC_DOWN",
+      "KC_MPLY",
+      "KC_VOLD",
       "KC_NO",
-      "KC_RGHT"
+      "KC_VOLU"
     ],
     [
       "KC_GRV",

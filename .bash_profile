@@ -53,3 +53,11 @@ function u() {
 function c() {
   clear
 }
+function neovim() {
+  $(configs)
+  cd .config/nvim/init.vim
+}
+function neovimC() {
+  $(configs)
+  cd .config/nvim/initWithComments.vim
+}

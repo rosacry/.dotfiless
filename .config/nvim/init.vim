@@ -16,6 +16,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'github/copilot.vim'
 Plug 'preservim/nerdtree'
 Plug 'semanser/vim-outdated-plugins'
+Plug 'tpope/vim-eunuch'
 call plug#end()
 inoremap jk <ESC>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
@@ -152,3 +153,4 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-h> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
 noremap y "*y
+autocmd BufEnter * lcd %:p:h

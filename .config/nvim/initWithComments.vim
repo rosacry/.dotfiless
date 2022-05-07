@@ -94,6 +94,8 @@ Plug 'github/copilot.vim'
 Plug 'preservim/nerdtree'
 "outdated pluggin detector
 Plug 'semanser/vim-outdated-plugins'
+"Vim sugar for the UNIX shell commands that need it the most"
+Plug 'tpope/vim-eunuch'
 " Initialize plugin system
 call plug#end()
 
@@ -384,3 +386,5 @@ noremap y "*y
 "Switch between window splits
 "wincmd is the vimscript equivalent to Ctrlw in normal mode.
 "In normal mode when you change of window you can use Ctrlw + p to come back to the previous window.
+"Opens file location when opening file with vim
+autocmd BufEnter * lcd %:p:h
