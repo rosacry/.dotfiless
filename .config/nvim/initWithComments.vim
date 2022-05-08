@@ -388,3 +388,5 @@ noremap y "*y
 "In normal mode when you change of window you can use Ctrlw + p to come back to the previous window.
 "Opens file location when opening file with vim
 autocmd BufEnter * lcd %:p:h
+"maps Ctrl-A to rename a file, with specifying the current directory as well
+nnoremap <C-A> :Rename <C-R>%

@@ -154,3 +154,4 @@ nnoremap <C-h> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
 noremap y "*y
 autocmd BufEnter * lcd %:p:h
+nnoremap <C-A> :Rename <C-R>%
