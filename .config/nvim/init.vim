@@ -99,7 +99,6 @@ function! s:show_documentation()
   endif
 endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
-nmap <F2> <Plug>(coc-rename)
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 augroup mygroup
@@ -168,7 +167,7 @@ noremap y "*y
 noremap yy "*yy
 autocmd BufEnter * lcd %:p:h
 nnoremap <F1> :Rename
-nnoremap <F2> :Move
+"nnoremap <F2> :Move
 nnoremap <F3> :Wall
 nnoremap <F4> :Remove
 imap <silent><script><expr> <C-A> copilot#Accept("\<CR>")
@@ -186,3 +185,10 @@ function CopilotToggle(toggle)
   endif
 endfunction
 noremap <silent><F12> :call CopilotToggle(g:toggle)<CR>
+let g:copilot_filetypes = {
+\ '*': v:false,
+\ 'python': v:true,
+\ 'cpp': v:true,
+\ 'java': v:true,
+\ 'vim': v:true,
+\ }

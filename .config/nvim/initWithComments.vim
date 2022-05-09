@@ -290,9 +290,6 @@ endfunction
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Remap for rename current word
-nmap <F2> <Plug>(coc-rename)
-
 " Remap for format selected region
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
@@ -415,6 +412,7 @@ nnoremap <F4> :Remove
 #accepts github copilots suggestion
 imap <silent><script><expr> <C-S> copilot#Accept("\<CR>"):
 let g:copilot_no_tab_map = v:true
+"creating a function to make a toggler for enabling/disabling copilot
 let g:toggle = 0
 function CopilotToggle(toggle)
   if g:toggle == 0
@@ -428,3 +426,11 @@ function CopilotToggle(toggle)
   endif
 endfunction
 noremap <silent><F12> :call CopilotToggle(g:toggle)<CR>
+"limiting filetypes for copilot
+let g:copilot_filetypes = {
+\ '*': v:false,
+\ 'python': v:true,
+\ 'cpp': v:true,
+\ 'java': v:true,
+\ 'vim': v:true,
+\ }
