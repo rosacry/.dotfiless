@@ -62,8 +62,23 @@ alt - n : yabai -m query --spaces --space \
 # close focused window
 alt - w : yabai -m window --close
 # enter fullscreen mode for the focused container
-alt - f : yabai -m window --toggle zoom-fullscreen
+alt - 0x2A : yabai -m window --grid 1:1:0:0:1:1
 
 # toggle window native fullscreen
-alt + shift - f : yabai -m window --toggle native-fullscreen
+alt + shift - 0x2A : yabai -m window --toggle native-fullscreen
 alt - return: open -n /Applications/kitty.app/Contents/MacOS/kitty
+
+#left/right windows
+alt - 0x29 : yabai -m window --grid 1:2:0:0:1:1
+alt - 0x27 : yabai -m window --grid 1:2:1:0:1:1
+
+#Bottom left/right windows
+alt - 0x2B : yabai -m window --grid 2:2:0:1:1:1
+alt - 0x2F : yabai -m window --grid 2:2:1:1:1:1
+
+#Top left/right windows
+alt - 0x21 : yabai -m window --grid 2:2:0:0:1:1
+alt - 0x1E : yabai -m window --grid 2:2:1:0:1:1
+
+# toggle window split type
+alt - t : yabai -m window --toggle split

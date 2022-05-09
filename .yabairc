@@ -15,7 +15,7 @@
 # yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 # bar settings
-yabai -m config top_padding 0
+yabai -m config top_padding                  0
 
 # global settings
 yabai -m config mouse_follows_focus          off
@@ -43,7 +43,7 @@ yabai -m config layout                       bsp
 yabai -m config bottom_padding               0
 yabai -m config left_padding                 0
 yabai -m config right_padding                0
-yabai -m config window_gap                   1
+yabai -m config window_gap                   0
 
 echo "yabai configuration loaded.."
 # spacebar padding on top screen

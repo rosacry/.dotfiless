@@ -182,8 +182,8 @@ let s:palette.tabline.middle = s:palette.normal.middle
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <F6> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
-noremap y "*y
-noremap yy "*yy
+vnoremap y "*y
+nnoremap yy "*yy
 autocmd BufEnter * lcd %:p:h
 nnoremap <F1> :Rename
 "nnoremap <F2> :Move
@@ -219,3 +219,11 @@ endfunction
 command! -nargs=1 Gitt call s:Git(<f-args>)
 nnoremap <F11> :PlugUpdate<Return>
 nnoremap <F12> :source %<Return>
+nnoremap <silent> gs :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction

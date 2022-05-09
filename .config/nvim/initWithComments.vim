@@ -76,7 +76,7 @@ Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 "Fugitive is the premier Vim plugin for Git. Or maybe it's the premier Git plugin for Vim? Either way, it's "so awesome, it should be illegal". That's why it's called Fugitive. Really only use if for the status bar in vim :)
 Plug 'tpope/vim-fugitive'
-"open a file using gf
+"open a file using gf, ctrl - o to go back to pervious buffer
 Plug 'amix/open_file_under_cursor.vim'
 "control functions and timers to run linters on the contents of text buffers and return errors as text is changed in Vim. This allows for displaying warnings and errors in files being edited in Vim before files have been saved back to a filesystem.
 Plug 'dense-analysis/ale'
@@ -467,3 +467,12 @@ command! -nargs=1 Gitt call s:Git(<f-args>)
 nnoremap <F11> :PlugUpdate
 "source file
 nnoremap <F12> :source %<Return>
+"view definition of function
+nnoremap <silent> gs :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction

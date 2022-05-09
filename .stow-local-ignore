@@ -29,6 +29,8 @@ macLayout.txt
 
 animations.txt
 
+karabiner.json
+
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
