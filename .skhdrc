@@ -68,6 +68,9 @@ alt - 0x2A : yabai -m window --grid 1:1:0:0:1:1
 alt + shift - 0x2A : yabai -m window --toggle native-fullscreen
 alt - return: open -n /Applications/kitty.app/Contents/MacOS/kitty
 
+#If padding is needed...
+#yabai -m config external_bar all:26:0
+
 #left/right windows
 alt - 0x29 : yabai -m window --grid 1:2:0:0:1:1
 alt - 0x27 : yabai -m window --grid 1:2:1:0:1:1
