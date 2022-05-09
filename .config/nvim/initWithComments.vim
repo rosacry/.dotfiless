@@ -99,6 +99,20 @@ Plug 'tpope/vim-eunuch'
 " Initialize plugin system
 call plug#end()
 
+"disables <F(number)> being pasted in insert mode
+map! <F1> <nop>
+map! <F2> <nop>
+map! <F3> <nop>
+map! <F4> <nop>
+map! <F5> <nop>
+map! <F6> <nop>
+map! <F7> <nop>
+map! <F8> <nop>
+map! <F9> <nop>
+map! <F10> <nop>
+map! <F11> <nop>
+map! <F12> <nop>
+
 "inoremap maps keys that work only in the insert and replace modes
 inoremap jk <ESC>
 "nmap Displays normal mode maps
@@ -343,7 +357,9 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap " ""<Esc>i
 autocmd Filetype java set makeprg=javac\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-command WC w | make
+command C w | make
+nnoremap <F7> :!g++ -o  %:r.out % -std=c++11<Enter>
+nnoremap <F8> :!./%:r.out<Enter>
 "map maps a sequence of keys to execute another sequence of keys. This is recursive, meaning that the mapping is expanded to a result, then the result is expanded to another result, and so on.
 map <F9> :make<Return> :copen<Return>
 map <F10> :cprevious<Return>
@@ -378,15 +394,37 @@ let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
 let s:palette.inactive.middle = s:palette.normal.middle
 let s:palette.tabline.middle = s:palette.normal.middle
 "NerdTree commands press "?" to show help
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-w> :NERDTreeCWD<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F6> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
 "Rebinding "*y to y
 noremap y "*y
+"as well as y for the whole line
+noremap yy "*yy
 "Switch between window splits
 "wincmd is the vimscript equivalent to Ctrlw in normal mode.
 "In normal mode when you change of window you can use Ctrlw + p to come back to the previous window.
 "Opens file location when opening file with vim
 autocmd BufEnter * lcd %:p:h
-"maps Ctrl-A to rename a file, with specifying the current directory as well
-nnoremap <C-A> :Rename <C-R>%
+"maps F keys to rename, and remove move a file, with specifying the current directory as well
+"as well as :Wall, which writes to all files
+nnoremap <F1> :Rename
+nnoremap <F2> :Move
+nnoremap <F3> :Wall
+nnoremap <F4> :Remove
+#accepts github copilots suggestion
+imap <silent><script><expr> <C-S> copilot#Accept("\<CR>"):
+let g:copilot_no_tab_map = v:true
+let g:toggle = 0
+function CopilotToggle(toggle)
+  if g:toggle == 0
+    :Copilot enable
+    let g:toggle = 1
+    echo "Copilot Enabled"
+  else
+    :Copilot disable
+    let g:toggle = 0
+    echo "Copilot Disabled"
+  endif
+endfunction
+noremap <silent><F12> :call CopilotToggle(g:toggle)<CR>

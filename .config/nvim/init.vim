@@ -18,6 +18,18 @@ Plug 'preservim/nerdtree'
 Plug 'semanser/vim-outdated-plugins'
 Plug 'tpope/vim-eunuch'
 call plug#end()
+map! <F1> <nop>
+map! <F2> <nop>
+map! <F3> <nop>
+map! <F4> <nop>
+map! <F5> <nop>
+map! <F6> <nop>
+map! <F7> <nop>
+map! <F8> <nop>
+map! <F9> <nop>
+map! <F10> <nop>
+map! <F11> <nop>
+map! <F12> <nop>
 inoremap jk <ESC>
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let g:prettier#autoformat = 0
@@ -120,8 +132,8 @@ inoremap " ""<Esc>i
 autocmd Filetype java set makeprg=javac\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 command C w | make
-nnoremap <C-c> :!g++ -o  %:r.out % -std=c++11<Enter>
-nnoremap <C-x> :!./%:r.out<Enter>
+nnoremap <F7> :!g++ -o  %:r.out % -std=c++11<Enter>
+nnoremap <F8> :!./%:r.out<Enter>
 map <F9> :make<Return> :copen<Return>
 map <F10> :cprevious<Return>
 map <F11> :cnext<Return>
@@ -149,9 +161,28 @@ let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
 let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
 let s:palette.inactive.middle = s:palette.normal.middle
 let s:palette.tabline.middle = s:palette.normal.middle
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-h> :NERDTreeCWD<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F6> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
 noremap y "*y
+noremap yy "*yy
 autocmd BufEnter * lcd %:p:h
-nnoremap <C-A> :Rename <C-R>%
+nnoremap <F1> :Rename
+nnoremap <F2> :Move
+nnoremap <F3> :Wall
+nnoremap <F4> :Remove
+imap <silent><script><expr> <C-A> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
+let g:toggle = 0
+function CopilotToggle(toggle)
+  if g:toggle == 0
+    :Copilot enable
+    let g:toggle = 1
+    echo "Copilot Enabled"
+  else
+    :Copilot disable
+    let g:toggle = 0
+    echo "Copilot Disabled"
+  endif
+endfunction
+noremap <silent><F12> :call CopilotToggle(g:toggle)<CR>
