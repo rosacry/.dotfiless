@@ -354,13 +354,32 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap " ""<Esc>i
 autocmd Filetype java set makeprg=javac\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-command C w | make
-nnoremap <F7> :!g++ -o  %:r.out % -std=c++11<Enter>
-nnoremap <F8> :!./%:r.out<Enter>
-"map maps a sequence of keys to execute another sequence of keys. This is recursive, meaning that the mapping is expanded to a result, then the result is expanded to another result, and so on.
-map <F9> :make<Return> :copen<Return>
-map <F10> :cprevious<Return>
-map <F11> :cnext<Return>
+function CompileFileType()
+  if (&ft=='c' || &ft=='cpp')
+    echo "Compiling..."
+    :silent :!g++ -o  %:r.out % -std=c++11<Return>
+  elseif (&ft=='java')
+    echo "Compiling..."
+    :silent :w | :silent :make
+  elseif (&ft=='python')
+    echo "Compiling..."
+    :silent :!python3 -m py_compile<Return>
+  endif
+endfunction
+function CompileRunFileType()
+  call CompileFileType()
+  if (&ft=='c' || &ft=='cpp')
+    :!./%:r.out
+  elseif (&ft=='java')
+    :!java -cp %:p:h %:t:r
+  elseif (&ft=='python')
+    :!python3 %:r.py
+  endif
+endfunction
+nnoremap <silent> <F7> :call CompileRunFileType()<CR>
+map <F8> :cprevious<Return>
+map <F9> :cnext<Return>
+"wrap at a character in the breakat option
 set wrap linebreak
 "Ale - make sure to do pip3 install flake8
 let g:ale_linters= {
@@ -410,7 +429,7 @@ nnoremap <F2> :Move
 nnoremap <F3> :Wall
 nnoremap <F4> :Remove
 #accepts github copilots suggestion
-imap <silent><script><expr> <C-S> copilot#Accept("\<CR>"):
+imap <silent><script><expr> <C-A> copilot#Accept("\<CR>"):
 let g:copilot_no_tab_map = v:true
 "creating a function to make a toggler for enabling/disabling copilot
 let g:toggle = 0
@@ -425,7 +444,7 @@ function CopilotToggle(toggle)
     echo "Copilot Disabled"
   endif
 endfunction
-noremap <silent><F12> :call CopilotToggle(g:toggle)<CR>
+noremap <silent><F10> :call CopilotToggle(g:toggle)<CR>
 "limiting filetypes for copilot
 let g:copilot_filetypes = {
 \ '*': v:false,

@@ -130,12 +130,31 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap " ""<Esc>i
 autocmd Filetype java set makeprg=javac\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-command C w | make
-nnoremap <F7> :!g++ -o  %:r.out % -std=c++11<Enter>
-nnoremap <F8> :!./%:r.out<Enter>
-map <F9> :make<Return> :copen<Return>
-map <F10> :cprevious<Return>
-map <F11> :cnext<Return>
+function CompileFileType()
+  if (&ft=='c' || &ft=='cpp')
+    echo "Compiling..."
+    :silent :!g++ -o  %:r.out % -std=c++11<Return>
+  elseif (&ft=='java')
+    echo "Compiling..."
+    :silent :w | :silent :make
+  elseif (&ft=='python')
+    echo "Compiling..."
+    :silent :!python3 -m py_compile<Return>
+  endif
+endfunction
+function CompileRunFileType()
+  call CompileFileType()
+  if (&ft=='c' || &ft=='cpp')
+    :!./%:r.out
+  elseif (&ft=='java')
+    :!java -cp %:p:h %:t:r
+  elseif (&ft=='python')
+    :!python3 %:r.py
+  endif
+endfunction
+nnoremap <silent> <F7> :call CompileRunFileType()<CR>
+map <F8> :cprevious<Return>
+map <F9> :cnext<Return>
 set wrap linebreak
 autocmd BufWritePre * :%s/\s\+$//e
 let g:ale_linters= {
@@ -184,7 +203,7 @@ function CopilotToggle(toggle)
     echo "Copilot Disabled"
   endif
 endfunction
-noremap <silent><F12> :call CopilotToggle(g:toggle)<CR>
+noremap <silent><F10> :call CopilotToggle(g:toggle)<CR>
 let g:copilot_filetypes = {
 \ '*': v:false,
 \ 'python': v:true,
@@ -192,3 +211,9 @@ let g:copilot_filetypes = {
 \ 'java': v:true,
 \ 'vim': v:true,
 \ }
+function! s:Git(args)
+  :Git add .
+  :Git commit -m args
+  :Git push
+endfunction
+command! -nargs=1 Gitt call s:Git(<f-args>)
