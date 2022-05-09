@@ -67,8 +67,8 @@ let g:coc_global_extensions = [
   \ 'coc-jedi',
   \ 'coc-json',
   \ ]
-let g:coc_snippet_next = '<Tab>'
-let g:coc_snippet_prev = '<S-Tab>'
+let g:coc_snippet_next = '<Down>'
+let g:coc_snippet_prev = '<Up>'
 set hidden
 set updatetime=100
 set shortmess+=c
@@ -217,3 +217,5 @@ function! s:Git(args)
   :Git push
 endfunction
 command! -nargs=1 Gitt call s:Git(<f-args>)
+nnoremap <F11> :PlugUpdate<Return>
+nnoremap <F12> :source %<Return>

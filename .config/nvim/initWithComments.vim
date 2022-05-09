@@ -67,7 +67,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 "Color Scheme
 Plug 'projekt0n/github-nvim-theme'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"TypeScript Syntax file
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 
 "snippets for various programming languages
@@ -80,7 +80,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'amix/open_file_under_cursor.vim'
 "control functions and timers to run linters on the contents of text buffers and return errors as text is changed in Vim. This allows for displaying warnings and errors in files being edited in Vim before files have been saved back to a filesystem.
 Plug 'dense-analysis/ale'
-"allows you to visually select increasingly larger regions of text using the same key combination
+"allows you to visually select increasingly larger regions of text using the same key combination using K (expand) and J (shrink)
 Plug 'terryma/vim-expand-region'
 "Sublime text style multiple selections for vim - pretty cool for recactoring
 "C-b + c to recator all, C-n c to refactor one word, C-n + C-n + .. to get
@@ -224,10 +224,10 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ ]
 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
-let g:coc_snippet_next = '<Tab>'
+let g:coc_snippet_next = '<Down>'
 
 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
-let g:coc_snippet_prev = '<S-Tab>'
+let g:coc_snippet_prev = '<Up>'
 " from readme
 " if hidden is not set, TextEdit might fail.
 "allows hidden buffers
@@ -257,7 +257,7 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Use <c-space> to trigger completion.
+" Use <c-space> to bring suggestions back up
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
@@ -352,8 +352,10 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap " ""<Esc>i
+"Java command to compile
 autocmd Filetype java set makeprg=javac\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
+" Compile and Run Command for Java, Python, and C/C++
 function CompileFileType()
   if (&ft=='c' || &ft=='cpp')
     echo "Compiling..."
@@ -453,3 +455,15 @@ let g:copilot_filetypes = {
 \ 'java': v:true,
 \ 'vim': v:true,
 \ }
+"using gitgutter add, commit, and push all in one
+function! s:Git(args)
+  :Git add .
+  :Git commit -m args
+  :Git push
+endfunction
+"adding, committing, and pushing all in one command
+command! -nargs=1 Gitt call s:Git(<f-args>)
+"update Plugins
+nnoremap <F11> :PlugUpdate
+"source file
+nnoremap <F12> :source %<Return>
