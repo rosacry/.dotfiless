@@ -18,23 +18,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PATH=/opt/homebrew/bin:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 # git add, commit and push commands in one line :)
 function gitt() {
     git add .
@@ -56,3 +39,5 @@ function c() {
 function stoww() {
   stow --adopt -t ~/ .
 }
+source <(kitty + complete setup bash)
+eval "$(starship init bash)"
