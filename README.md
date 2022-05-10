@@ -14,11 +14,17 @@ Links to my environment and what I use:
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
 
-Quick Note:
-  For M1 Macbooks running Catalina and Monterey, you must go through this form -> https://github.com/koekeishiya/yabai/issues/1054
+Quick Notes:
+*  For M1 Macbooks running Catalina and Monterey, you must go through this form -> https://github.com/koekeishiya/yabai/issues/1054
  in order to get the full use case of yabai, the Window Manager I use.
 
 Installation:
-  Restore homebrew packages by running: brew bundle --file=~/Brewfile(-(snapshot))
-  Add fish to shells list: /etc/shells
-  Update Default shell to fish: chsh -s /opt/homebrew/bin/fish
+*  Restore homebrew packages by running:
+```
+brew bundle --file=~/Brewfile(-(snapshot))
+```
+*  Add fish to shells list: /etc/shells, use `which fish` to find the path of fish
+*  Update Default shell to fish:
+```
+chsh -s /opt/homebrew/bin/fish
+```
