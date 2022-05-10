@@ -23,6 +23,15 @@
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
 
 ## References to my dotfiles
+* [kitty]()
+* [spacebar]()
+* [skhd]()
+* [yabai]()
+* [starship]()
+* [fish]()
+* [neovim]()
+* [karabiner]()
+* [Via (DZ60) Layout]()
 
 
 ## Quick Notes
