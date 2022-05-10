@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+/Users/chrisrosales/.config/coc/extensions/coc-java-data/jdt_ws_16ef905c39c14cb5ce19b65090c34295/.metadata/.plugins/org.eclipse.jdt.core
-1356152765.index
-3842426239.index
