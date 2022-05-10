@@ -1,4 +1,4 @@
-# My minimal dotfiles
+# My dotfiles
 ![screenshot](wallpaper/mr_robot_5k.jpeg)
 
 Links to my environment and what I use:
@@ -15,10 +15,11 @@ Links to my environment and what I use:
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
 
 Quick Notes:
-*  For M1 Macbooks running Catalina and Monterey, you must go through this form -> https://github.com/koekeishiya/yabai/issues/1054
- in order to get the full use case of yabai, the Window Manager I use.
+*  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) form
+ in order to get the full use case of yabai
 
 Installation:
+
 Restore homebrew packages by running:
 ```
 brew bundle --file=~/Brewfile[-(snapshot)]
