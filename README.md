@@ -3,12 +3,10 @@
 
 
 ## Contents
-- [References to my dotfiles](#references-to-my-dotfiles)
 - [Links to my environment and what I use](#links-to-my-environment-and-what-I-use)
+- [References to my dotfiles](#references-to-my-dotfiles)
 - [Quick Notes](#quick-notes)
 - [Installation](#installation)
-
-## References to my dotfiles
 
 
 ## Links to my environment and what I use
@@ -23,6 +21,9 @@
 * [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) - Font
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
+
+## References to my dotfiles
+
 
 ## Quick Notes
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
