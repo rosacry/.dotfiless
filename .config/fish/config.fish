@@ -43,6 +43,10 @@ function gitt
 	git --git-dir=$PWD/.git push # Push to remote
 end
 
+function gittU
+  git push --set-upstream origin master
+end
+
 function p
   cd ..
 end
