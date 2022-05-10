@@ -51,7 +51,7 @@ Restore homebrew packages by running:
 ```
 brew bundle --file=~/Brewfile[-(snapshot)]
 ```
-Add fish to shells list: /etc/shells, use `which fish` to find the path of fish
+Add fish to shells list: `/etc/shells`, use `which fish` to find the path of fish
 
 Update Default shell to fish:
 ```
