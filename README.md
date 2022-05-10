@@ -3,7 +3,7 @@
 
 
 ## Contents
-- [Links to my environment and what I use](#Links to my environment and what I use)
+- [Links to my environment and what I use](#linkstomyenvironmentandwhatIuse)
 - [Quick Notes](#quicknotes)
 - [Installation](#installation)
 
