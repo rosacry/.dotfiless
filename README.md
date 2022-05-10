@@ -1,7 +1,14 @@
-# My dotfiles
+### My dotfiles
 ![screenshot](wallpaper/mr_robot_5k.jpeg)
 
-Links to my environment and what I use:
+
+## Contents
+- [dotfile Links](#links)
+- [Quick Notes](#quicknotes)
+- [Installation](#installation)
+
+
+- [Links to my environment and what I use](#links)
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
 * [simple-bar](https://simple-bar.com/en/) - Status Bar
 * [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
@@ -14,11 +21,11 @@ Links to my environment and what I use:
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
 
-Quick Notes:
+- [Quick Notes](#quicknotes)
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
  in order to get the full use case of yabai
 
-Installation:
+- [Installation](#installation)
 
 Install Homebrew
 ```
@@ -44,7 +51,7 @@ Use [Stow](https://www.gnu.org/software/stow/manual/stow.html) to copy and link 
 ```
 stow --adopt -t ~/ .
 ```
-Now we can `git pull` in this repository if there are ever changes/updates made to the online repository
+Now we can `git pull` in this local repository if there are ever changes/updates made to the online repository
 
 
 Restore homebrew packages by running:
