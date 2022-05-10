@@ -1,0 +1,17 @@
+1a. O(n)^2
+1b. Because no matter what you're reaching the second for loop , and the for loops combined is the formula for "sum of number" -> n(n+1)/2
+1c. This algorithm is designed for in place, but it can also work for out of place
+1d. int[] testArray = {22,44,33,11,55} 
+22 44 33 11 55 inner = 0, outer = 1 
+22 44 33 11 55 inner = 0, outer = 2 
+22 44 33 11 55 inner = 0, outer = 3
+22 44 33 11 55 inner = 0, outer = 4 // a swap must occur 
+11 44 33 22 55 inner = 1, outer = 2
+11 44 33 22 55 inner = 1, outer = 3
+11 44 33 22 55 inner = 1, outer = 4 // a swap must occur
+11 22 33 44 55 inner = 2, outer = 3
+11 22 33 44 55 inner = 2, outer = 4
+11 22 33 44 55 inner = 3, outer = 4
+11 22 33 44 55 //End result
+two total swaps
+

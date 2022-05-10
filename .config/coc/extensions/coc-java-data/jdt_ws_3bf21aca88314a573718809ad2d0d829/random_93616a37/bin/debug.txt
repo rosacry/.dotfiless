@@ -1,0 +1,70 @@
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: Network device 'wlan1' link is down
+Wed Apr 27 16:01:35 2022 kern.info kernel: [592164.050231] br-lan: port 2(wlan1) entered disabled state
+Wed Apr 27 16:01:35 2022 kern.info kernel: [592164.058508] wlan-sta: deauthenticating from 1c:28:af:20:b2:82 by local choice (Reason: 3=DEAUTH_LEAVING)
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: Network device 'wlan-sta' link is down
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: Interface 'wwan' has link connectivity loss
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: wwan (15805): udhcpc: received SIGTERM
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: Interface 'wwan' is now down
+Wed Apr 27 16:01:35 2022 daemon.notice wpa_supplicant[15782]: wlan-sta: CTRL-EVENT-DISCONNECTED bssid=1c:28:af:20:b2:82 reason=3 locally_generated=1
+Wed Apr 27 16:01:35 2022 daemon.notice wpa_supplicant[15782]: wlan-sta: PMKSA-CACHE-REMOVED 1c:28:af:20:b2:82 0
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: Interface 'wwan' is disabled
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: Interface 'wwan' is enabled
+Wed Apr 27 16:01:35 2022 daemon.warn dnsmasq[2809]: no servers found in /tmp/resolv.conf.auto, will retry
+Wed Apr 27 16:01:35 2022 daemon.notice netifd: Network device 'wlan1' link is up
+Wed Apr 27 16:01:35 2022 kern.info kernel: [592164.430658] br-lan: port 2(wlan1) entered blocking state
+Wed Apr 27 16:01:35 2022 kern.info kernel: [592164.436296] br-lan: port 2(wlan1) entered forwarding state
+Wed Apr 27 16:01:48 2022 daemon.notice hostapd: wlan1: AP-STA-DISCONNECTED 8e:de:70:60:ef:11
+Wed Apr 27 16:01:48 2022 daemon.info hostapd: wlan1: STA 8e:de:70:60:ef:11 IEEE 802.11: disassociated due to inactivity
+Wed Apr 27 16:01:49 2022 daemon.info hostapd: wlan1: STA 8e:de:70:60:ef:11 IEEE 802.11: deauthenticated due to inactivity (timer DEAUTH/REMOVE)
+Wed Apr 27 16:02:28 2022 daemon.notice netifd: Interface 'wwan' is disabled
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: wlan1: interface state ENABLED->DISABLED
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: wlan1: AP-STA-DISCONNECTED 34:86:5d:c9:f4:68
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: wlan1: AP-STA-DISCONNECTED 4c:53:fd:08:fa:ed
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: wlan1: AP-STA-DISCONNECTED d8:fb:d6:25:b5:b3
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: wlan1: AP-STA-DISCONNECTED 52:bd:e5:3d:eb:93
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: wlan1: AP-DISABLED
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: wlan1: CTRL-EVENT-TERMINATING
+Wed Apr 27 16:02:28 2022 daemon.err wpa_supplicant[15782]:  Failed to stop hostapd AP interfaces
+Wed Apr 27 16:02:28 2022 daemon.notice wpa_supplicant[15782]: nl80211: deinit ifname=wlan-sta disabled_11b_rates=0
+Wed Apr 27 16:02:28 2022 daemon.notice wpa_supplicant[15782]: wlan-sta: CTRL-EVENT-TERMINATING
+Wed Apr 27 16:02:28 2022 daemon.notice hostapd: nl80211: deinit ifname=wlan1 disabled_11b_rates=0
+Wed Apr 27 16:02:28 2022 kern.info kernel: [592217.020306] device wlan1 left promiscuous mode
+Wed Apr 27 16:02:28 2022 kern.info kernel: [592217.025310] br-lan: port 2(wlan1) entered disabled state
+Wed Apr 27 16:02:28 2022 daemon.notice netifd: Network device 'wlan1' link is down
+Wed Apr 27 16:02:29 2022 daemon.err hostapd: Configuration file: /var/run/hostapd-phy1.conf
+Wed Apr 27 16:02:29 2022 daemon.notice netifd: radio1 (13854): sh: /usr/bin/ovs-vsctl: not found
+Wed Apr 27 16:02:29 2022 daemon.notice netifd: radio1 (13854): sh: /usr/bin/ovs-vsctl: not found
+Wed Apr 27 16:02:29 2022 kern.info kernel: [592218.431271] br-lan: port 2(wlan1) entered blocking state
+Wed Apr 27 16:02:29 2022 kern.info kernel: [592218.436904] br-lan: port 2(wlan1) entered disabled state
+Wed Apr 27 16:02:29 2022 kern.info kernel: [592218.442732] device wlan1 entered promiscuous mode
+Wed Apr 27 16:02:29 2022 daemon.notice hostapd: wlan1: interface state UNINITIALIZED->HT_SCAN
+Wed Apr 27 16:02:30 2022 daemon.notice hostapd: handle_probe_req: send failed
+Wed Apr 27 16:02:31 2022 daemon.notice hostapd: 20/40 MHz operation not permitted on channel pri=6 sec=10 based on overlapping BSSes
+Wed Apr 27 16:02:31 2022 daemon.err hostapd: Using interface wlan1 with hwaddr 94:83:c4:15:d9:80 and ssid "WolfieNet Secure"
+Wed Apr 27 16:02:31 2022 kern.info kernel: [592220.044411] br-lan: port 2(wlan1) entered blocking state
+Wed Apr 27 16:02:31 2022 kern.info kernel: [592220.050052] br-lan: port 2(wlan1) entered forwarding state
+Wed Apr 27 16:02:31 2022 daemon.notice hostapd: wlan1: interface state HT_SCAN->ENABLED
+Wed Apr 27 16:02:31 2022 daemon.notice hostapd: wlan1: AP-ENABLED
+Wed Apr 27 16:02:31 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 IEEE 802.11: authenticated
+Wed Apr 27 16:02:31 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 IEEE 802.11: associated (aid 1)
+Wed Apr 27 16:02:31 2022 daemon.notice hostapd: wlan1: AP-STA-CONNECTED d8:fb:d6:25:b5:b3
+Wed Apr 27 16:02:31 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 RADIUS: starting accounting session CDFFFF76DA55F9FE
+Wed Apr 27 16:02:31 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 WPA: pairwise key handshake completed (RSN)
+Wed Apr 27 16:02:31 2022 daemon.notice netifd: Network device 'wlan1' link is up
+Wed Apr 27 16:02:35 2022 daemon.notice hostapd: wlan1: AP-STA-DISCONNECTED d8:fb:d6:25:b5:b3
+Wed Apr 27 16:02:35 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 IEEE 802.11: authenticated
+Wed Apr 27 16:02:35 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 IEEE 802.11: associated (aid 1)
+Wed Apr 27 16:02:36 2022 daemon.notice hostapd: wlan1: AP-STA-CONNECTED d8:fb:d6:25:b5:b3
+Wed Apr 27 16:02:36 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 RADIUS: starting accounting session CDFFFF76DA55F9FE
+Wed Apr 27 16:02:36 2022 daemon.info hostapd: wlan1: STA d8:fb:d6:25:b5:b3 WPA: pairwise key handshake completed (RSN)
+Wed Apr 27 16:02:36 2022 daemon.info dnsmasq-dhcp[2809]: DHCPDISCOVER(br-lan) d8:fb:d6:25:b5:b3
+Wed Apr 27 16:02:36 2022 daemon.info dnsmasq-dhcp[2809]: DHCPOFFER(br-lan) 192.168.8.150 d8:fb:d6:25:b5:b3
+Wed Apr 27 16:02:36 2022 daemon.info dnsmasq-dhcp[2809]: DHCPREQUEST(br-lan) 192.168.8.150 d8:fb:d6:25:b5:b3
+Wed Apr 27 16:02:36 2022 daemon.info dnsmasq-dhcp[2809]: DHCPACK(br-lan) 192.168.8.150 d8:fb:d6:25:b5:b3 Blink-Mini
+Wed Apr 27 16:02:36 2022 daemon.info hostapd: wlan1: STA 8e:de:70:60:ef:11 IEEE 802.11: authenticated
+Wed Apr 27 16:02:36 2022 daemon.info hostapd: wlan1: STA 8e:de:70:60:ef:11 IEEE 802.11: associated (aid 2)
+Wed Apr 27 16:02:36 2022 daemon.notice hostapd: wlan1: AP-STA-CONNECTED 8e:de:70:60:ef:11
+Wed Apr 27 16:02:36 2022 daemon.info hostapd: wlan1: STA 8e:de:70:60:ef:11 RADIUS: starting accounting session EF7D8DA0EFD39811
+Wed Apr 27 16:02:36 2022 daemon.info hostapd: wlan1: STA 8e:de:70:60:ef:11 WPA: pairwise key handshake completed (RSN)
+Wed Apr 27 16:02:36 2022 daemon.info dnsmasq-dhcp[2809]: DHCPREQUEST(br-lan) 192.168.8.170 8e:de:70:60:ef:11
+Wed Apr 27 16:02:36 2022 daemon.info dnsmasq-dhcp[2809]: DHCPACK(br-lan) 192.168.8.170 8e:de:70:60:ef:11

@@ -1,0 +1,780 @@
+!SESSION 2021-07-07 11:27:04.242 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/chrisrosales/.config/coc/extensions/coc-java-data/jdt_ws_892ba6d46699eb1d09de6fb00d5fa15f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:06.901
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.035
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.067
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.078
+!MESSAGE Initializing Java Language Server 0.57.0.202006172108
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.098
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.098
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.121
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2021-07-07 11:27:07.150
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.165
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.857
+!MESSAGE Default VM Install changed from  null to com.oracle.java.jdk-/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.879
+!MESSAGE defaultVMInstallChanged -> force update of jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:07.917
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:08.908
+!MESSAGE Try to create an invisible project for the workspace /Users/chrisrosales/programming/sbuWork/214/unit1_Specifications_OrderComplexity_SoftwareDevelopment_AbstractDataTypes/Bag
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:08.909
+!MESSAGE Creating the Java project Bag_2251a1f4
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:08.945
+!MESSAGE Finished creating the Java project Bag_2251a1f4
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:08.968
+!MESSAGE Successfully created a workspace invisible project Bag_2251a1f4
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:08.973
+!MESSAGE Workspace initialized in 1870ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:08.992
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:09.030
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:09.058
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:09.062
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:09.898
+!MESSAGE >> Updating classpath for project Bag_2251a1f4
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:09.927
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.614
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.616
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.628
+!MESSAGE Validated 1. Took 693 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.651
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.658
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.664
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.665
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:27:10.666
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:21.005
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:21.503
+!MESSAGE Reconciled 0. Took 70 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:22.365
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:22.367
+!MESSAGE 13 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:22.370
+!MESSAGE Validated 1. Took 462 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:22.808
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:23.258
+!MESSAGE Reconciled 0. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:23.964
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:23.966
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:23.966
+!MESSAGE Validated 1. Took 301 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:24.154
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:24.589
+!MESSAGE Reconciled 0. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:25.214
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:25.215
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:25.215
+!MESSAGE Validated 1. Took 219 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:25.446
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:25.628
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:25.750
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:26.149
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:26.180
+!MESSAGE Reconciled 0. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:26.246
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:26.361
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:26.425
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:26.711
+!MESSAGE Reconciled 0. Took 51 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:26.772
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.045
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.156
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.215
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.420
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.528
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.531
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.563
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.624
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:27.697
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.149
+!MESSAGE Reconciled 0. Took 43 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.170
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.277
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.320
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.323
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.404
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.507
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.606
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.689
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:28.995
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.060
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.123
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.227
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.261
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.274
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.304
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.386
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.474
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.539
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.606
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.865
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:29.972
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:30.019
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:30.320
+!MESSAGE Reconciled 0. Took 36 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:30.669
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:30.697
+!MESSAGE >> document/formatting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:30.961
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:31.039
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:31.040
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:31.042
+!MESSAGE Validated 1. Took 312 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:31.059
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:31.508
+!MESSAGE Reconciled 0. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:32.047
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:32.048
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:40:32.048
+!MESSAGE Validated 1. Took 132 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:41:19.392
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:41:23.857
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:41:24.274
+!MESSAGE Reconciled 0. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:41:24.842
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:41:24.842
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:41:24.844
+!MESSAGE Validated 1. Took 163 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:43:00.864
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:43:01.283
+!MESSAGE Reconciled 0. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:43:01.799
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:43:01.800
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:43:01.801
+!MESSAGE Validated 1. Took 112 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:08.752
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:08.885
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:09.332
+!MESSAGE Reconciled 0. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:09.665
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:09.709
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:09.813
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:10.138
+!MESSAGE Reconciled 0. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.395
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.399
+!MESSAGE 3 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.401
+!MESSAGE Validated 1. Took 846 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.465
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.641
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.664
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.672
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:11.680
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.133
+!MESSAGE Reconciled 0. Took 48 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.525
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.540
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.724
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.725
+!MESSAGE 3 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.728
+!MESSAGE Validated 1. Took 185 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.734
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.737
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.739
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.933
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.936
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.939
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.943
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.945
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.946
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.948
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.994
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.995
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.996
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:12.997
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:13.031
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:13.077
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:13.133
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:13.207
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:13.492
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:13.657
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:13.995
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:14.466
+!MESSAGE Reconciled 0. Took 58 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:15.017
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:15.018
+!MESSAGE 2 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:15.019
+!MESSAGE Validated 1. Took 146 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:17.073
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:17.182
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:17.538
+!MESSAGE Reconciled 0. Took 37 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:17.839
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:17.858
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:18.291
+!MESSAGE Reconciled 0. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:18.872
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:18.872
+!MESSAGE 2 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:18.874
+!MESSAGE Validated 1. Took 177 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.164
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.273
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.592
+!MESSAGE Reconciled 0. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.690
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.698
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.702
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.703
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:22.799
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.124
+!MESSAGE Reconciled 0. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.371
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.589
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.600
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.711
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.721
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.799
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.823
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:23.899
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:24.003
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:24.140
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:24.599
+!MESSAGE Reconciled 0. Took 47 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:25.084
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:25.145
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:25.145
+!MESSAGE 3 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:25.146
+!MESSAGE Validated 1. Took 141 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:25.480
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:25.898
+!MESSAGE Reconciled 0. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:25.966
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:26.119
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:26.264
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:26.683
+!MESSAGE Reconciled 0. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:27.194
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:27.205
+!MESSAGE 3 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:45:27.206
+!MESSAGE Validated 1. Took 115 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:05.604
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:05.616
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:05.681
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:05.685
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:06.033
+!MESSAGE Reconciled 0. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:06.531
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:06.532
+!MESSAGE 2 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:06.533
+!MESSAGE Validated 1. Took 93 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:06.732
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:07.110
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:07.574
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:07.747
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:07.752
+!MESSAGE >> document/formatting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:07.841
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:08.064
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:08.065
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:49:08.065
+!MESSAGE Validated 1. Took 89 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 11:54:39.334
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:50.398
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:52.693
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:52.850
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.025
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.361
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.463
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.497
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.523
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.648
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.775
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:53.887
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:54.193
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:54.266
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:54.374
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:54.398
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:54.420
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:54.494
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:54.913
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.287
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.290
+!MESSAGE >> document/formatting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.358
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.429
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.430
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.431
+!MESSAGE Validated 1. Took 112 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.444
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:55.898
+!MESSAGE Reconciled 0. Took 43 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:56.018
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:56.389
+!MESSAGE begin problem for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:56.390
+!MESSAGE 0 problems reported for /IntArrayBag.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:03:56.392
+!MESSAGE Validated 1. Took 83 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:11:24.156
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:18:21.807
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:18:32.077
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 12:34:52.821
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 15:33:49.564
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 15:33:55.666
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 15:33:56.706
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 15:33:58.002
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 15:51:59.415
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 15:51:59.465
+!MESSAGE >> document/formatting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-07-07 15:51:59.675
+!MESSAGE >> document/didSave
