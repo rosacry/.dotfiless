@@ -19,12 +19,13 @@ Quick Notes:
  in order to get the full use case of yabai, the Window Manager I use.
 
 Installation:
-*  Restore homebrew packages by running:
+Restore homebrew packages by running:
 ```
-brew bundle --file=~/Brewfile(-(snapshot))
+brew bundle --file=~/Brewfile[-(snapshot)]
 ```
-*  Add fish to shells list: /etc/shells, use `which fish` to find the path of fish
-*  Update Default shell to fish:
+Add fish to shells list: /etc/shells, use `which fish` to find the path of fish
+
+Update Default shell to fish:
 ```
 chsh -s /opt/homebrew/bin/fish
 ```
