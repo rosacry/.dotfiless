@@ -31,7 +31,8 @@
 * [fish]()
 * [neovim]()
 * [karabiner]()
-* [Via (DZ60) Layout]()
+* [stow]()
+* [via (DZ60) layout]()
 
 
 ## Quick Notes
