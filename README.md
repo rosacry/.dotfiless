@@ -3,9 +3,12 @@
 
 
 ## Contents
+- [References to my dotfiles](#references-to-my-dotfiles)
 - [Links to my environment and what I use](#links-to-my-environment-and-what-I-use)
 - [Quick Notes](#quick-notes)
 - [Installation](#installation)
+
+## References to my dotfiles
 
 
 ## Links to my environment and what I use
@@ -23,16 +26,16 @@
 
 ## Quick Notes
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
- in order to get the full use case of yabai
+ in order to get the full use case of [yabai](https://github.com/xorpse/yabai/)
 
 ## Installation
 
-Install Homebrew
+Install [Homebrew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Install Git and Stow
+Install [Git](https://git-scm.com/) and [Stow](https://www.gnu.org/software/stow/manual/stow.html)
 ```
 brew install git && brew install stow
 ```
@@ -42,7 +45,7 @@ Clone my repository
 git clone https://github.com/rosacry/.dotfiles.git
 ```
 
-Change Directory to the Directory the repository was cloned to (.dotfiles)
+Change Directory to the Directory the repository was cloned to
 ```
 cd .dotfiles
 ```
@@ -54,11 +57,11 @@ stow --adopt -t ~/ .
 Now we can `git pull` in this local repository if there are ever changes/updates made to the online repository
 
 
-Restore homebrew packages by running:
+Restore homebrew packages by running `[-(snapshot_id)]` is if you have your own Brewfile with a specific snapshot ID:
 ```
-brew bundle --file=~/Brewfile[-(snapshot)]
+brew bundle --file=~/Brewfile[-(snapshot_id)]
 ```
-Add fish to shells list: `/etc/shells`, use `which fish` to find the path of fish
+Add [fish](https://fishshell.com/) to shells list: `/etc/shells`, use `which fish` to find the path of fish
 
 Update Default shell to fish:
 ```
@@ -70,7 +73,7 @@ Update brew
 brew update && brew upgrade
 ```
 
-Install neovim plugins, in `nvim` type
+Install [neovim](https://neovim.io/) plugins, in `nvim` type
 ```
 :PlugInstall
 ```
