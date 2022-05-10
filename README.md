@@ -1,14 +1,14 @@
-### My dotfiles
+# My dotfiles
 ![screenshot](wallpaper/mr_robot_5k.jpeg)
 
 
 ## Contents
-- [dotfile Links](#links)
+- [Links to my environment and what I use](#environment)
 - [Quick Notes](#quicknotes)
 - [Installation](#installation)
 
 
-- [Links to my environment and what I use](#links)
+## Links to my environment and what I use
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
 * [simple-bar](https://simple-bar.com/en/) - Status Bar
 * [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
@@ -21,11 +21,11 @@
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
 
-- [Quick Notes](#quicknotes)
+## Quick Notes
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
  in order to get the full use case of yabai
 
-- [Installation](#installation)
+## Installation
 
 Install Homebrew
 ```
