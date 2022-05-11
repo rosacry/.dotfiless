@@ -22,12 +22,14 @@ LEAVE ME HERE
 * [neovim](https://neovim.io/) - Text Editor
 * [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) - Font
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
+
 ####OSX Specific
 * [simple-bar](https://simple-bar.com/en/) - Status Bar
 * [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
 * [skhd](https://github.com/koekeishiya/skhd/) - Simple Hotkey Daemon
 * [yabai](https://github.com/xorpse/yabai/) - Window Manager
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
+
 ####Linux Specific
 * [i3wm](https://i3wm.org/) - Window Manager
 * [polybar](https://github.com/polybar/polybar) - Status Bar
@@ -42,6 +44,7 @@ LEAVE ME HERE
 * [neovim](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/alias.fish)
   * [with comments](https://github.com/rosacry/.dotfiles/blob/master/.config/nvim/initWithComments.vim)
 * [stow](https://github.com/rosacry/.dotfiles/blob/master/.stowrc)
+
 ####OSX Specific
 * [spacebar](https://github.com/rosacry/.dotfiles/blob/master/.config/spacebar/spacebarrc)
 * [skhd](https://github.com/rosacry/.dotfiles/blob/master/.skhdrc)
@@ -58,6 +61,7 @@ LEAVE ME HERE
  in order to get the full use case of [yabai](https://github.com/xorpse/yabai/)
 
 ## Installation
+
 ####OSX
 Install [Homebrew](https://brew.sh/)
 ```
@@ -101,7 +105,9 @@ Install [neovim](https://neovim.io/) plugins, in `nvim` type
 ```
 :PlugInstall
 ```
+
 ####Linux
 wip
+
 ## Debugging
-* Reboot
+* try rebooting
