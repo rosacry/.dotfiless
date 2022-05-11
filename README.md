@@ -70,7 +70,7 @@ Install [Homebrew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-Install [Git](https://git-scm.com/) and [Stow](https://www.gnu.org/software/stow/manual/stow.html), if you want to use cli, simply change `git` in `brew install git` to `gh`, then authenticate using `gh auth login` if you haven't already
+Install [Git](https://git-scm.com/) and [Stow](https://www.gnu.org/software/stow/manual/stow.html), if you want to use [github cli](https://cli.github.com/), simply change `git` in `brew install git` to `gh`, then authenticate using `gh auth login` if you haven't already
 ```
 brew install git && brew install stow
 ```
