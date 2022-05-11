@@ -108,7 +108,7 @@ Install [neovim](https://neovim.io/) plugins, in `nvim` type
 ```
 :PlugInstall
 ```
-#### Disable animations when opening and closing windows.
+##### Disable animations when opening and closing windows.
 ```
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 ```
