@@ -95,7 +95,7 @@ brew bundle --file=~/Brewfile[-(snapshot_id)]
 ```
 `[-(snapshot_id)]` is if you have your own Brewfile with a specific snapshot ID
 
-Add [fish](https://fishshell.com/) to shells list `/etc/shells` and Update Default shell to fish
+Add [fish](https://fishshell.com/) to shells list `/etc/shells` and update default shell to fish
 ```
 which fish >> /etc/shells && chsh -s /opt/homebrew/bin/fish
 ```
