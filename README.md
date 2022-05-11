@@ -13,6 +13,7 @@ LEAVE ME HERE
 - [Installation](#installation)
   - [OSX](#osx)
   - [Linux](#linux)
+  - [Windows](#windows)
 - [Debugging](#debugging)
 
 ## Links to my environment and what I use
@@ -122,5 +123,7 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 ### Linux
 wip
 
+### Windows
+yea u thought lol
 ## Debugging
 * try rebooting
