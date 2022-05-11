@@ -23,14 +23,14 @@ LEAVE ME HERE
 * [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) - Font
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
 
-####OSX Specific
+#### OSX Specific
 * [simple-bar](https://simple-bar.com/en/) - Status Bar
 * [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
 * [skhd](https://github.com/koekeishiya/skhd/) - Simple Hotkey Daemon
 * [yabai](https://github.com/xorpse/yabai/) - Window Manager
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
 
-####Linux Specific
+#### Linux Specific
 * [i3wm](https://i3wm.org/) - Window Manager
 * [polybar](https://github.com/polybar/polybar) - Status Bar
 
@@ -45,14 +45,14 @@ LEAVE ME HERE
   * [with comments](https://github.com/rosacry/.dotfiles/blob/master/.config/nvim/initWithComments.vim)
 * [stow](https://github.com/rosacry/.dotfiles/blob/master/.stowrc)
 
-####OSX Specific
+#### OSX Specific
 * [spacebar](https://github.com/rosacry/.dotfiles/blob/master/.config/spacebar/spacebarrc)
 * [skhd](https://github.com/rosacry/.dotfiles/blob/master/.skhdrc)
 * [yabai](https://github.com/rosacry/.dotfiles/blob/master/.yabairc)
 * [karabiner](https://github.com/rosacry/.dotfiles/blob/master/karabiner.json)
 * [via (DZ60) layout](https://github.com/rosacry/.dotfiles/blob/master/dz60rgb_v2.json)
 
-####Linux Specific
+#### Linux Specific
 * [i3wm]()
 * [polybar]()
 
@@ -62,7 +62,7 @@ LEAVE ME HERE
 
 ## Installation
 
-####OSX
+#### OSX
 Install [Homebrew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -106,7 +106,7 @@ Install [neovim](https://neovim.io/) plugins, in `nvim` type
 :PlugInstall
 ```
 
-####Linux
+#### Linux
 wip
 
 ## Debugging
