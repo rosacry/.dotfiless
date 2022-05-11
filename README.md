@@ -95,19 +95,21 @@ brew bundle --file=~/Brewfile[-(snapshot_id)]
 ```
 `[-(snapshot_id)]` is if you have your own Brewfile with a specific snapshot ID
 
-Add [fish](https://fishshell.com/) to shells list: `/etc/shells`, use `which fish` to find the path of fish
-
-Update Default shell to fish
+Add [fish](https://fishshell.com/) to shells list `/etc/shells` and Update Default shell to fish
 ```
-chsh -s /opt/homebrew/bin/fish
+which fish >> /etc/shells && chsh -s /opt/homebrew/bin/fish
+```
+Install and Update [neovim](https://neovim.io/) plugins, in `nvim` type
+```
+:PlugInstall
+```
+and
+```
+:PlugUpdate
 ```
 Update brew
 ```
 brew update && brew upgrade
-```
-Install [neovim](https://neovim.io/) plugins, in `nvim` type
-```
-:PlugInstall
 ```
 #### Optional
 ##### Disable animations when opening and closing windows.
