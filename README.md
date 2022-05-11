@@ -59,6 +59,8 @@ LEAVE ME HERE
 ## Quick Notes
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
  in order to get the full use case of [yabai](https://github.com/xorpse/yabai/)
+* Don't forget to authenticate to [github cli](https://cli.github.com/) using `gh auth login` and [github copilot](https://copilot.github.com/) using `:Copilot setup` if you're using either one
+
 
 ## Installation
 
@@ -105,7 +107,6 @@ Install [neovim](https://neovim.io/) plugins, in `nvim` type
 ```
 :PlugInstall
 ```
-Don't forget to authenticate to github cli and copilot if you're using either one
 #### Disable animations when opening and closing windows.
 ```
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false

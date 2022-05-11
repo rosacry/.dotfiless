@@ -17,6 +17,7 @@ Plug 'github/copilot.vim'
 Plug 'preservim/nerdtree'
 Plug 'semanser/vim-outdated-plugins'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
 call plug#end()
 map! <F1> <nop>
 map! <F2> <nop>

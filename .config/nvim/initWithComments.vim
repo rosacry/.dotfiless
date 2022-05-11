@@ -96,6 +96,8 @@ Plug 'preservim/nerdtree'
 Plug 'semanser/vim-outdated-plugins'
 "Vim sugar for the UNIX shell commands that need it the most"
 Plug 'tpope/vim-eunuch'
+"Surrounds brances of many types, easily mutable, cs(old)(new)
+Plug 'tpope/vim-surround'
 " Initialize plugin system
 call plug#end()
 
