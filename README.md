@@ -107,7 +107,8 @@ Install [neovim](https://neovim.io/) plugins, in `nvim` type
 ```
 Don't forget to authenticate to github cli and copilot if you're using either one
 #### Disable animations when opening and closing windows.
-```defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+```
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 ```
 
 #### Accelerated playback when adjusting the window size.
