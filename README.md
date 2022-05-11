@@ -73,10 +73,12 @@ stow --adopt -t ~/ .
 Now we can `git pull` in this local repository if there are ever changes/updates made to the online repository
 
 
-Restore homebrew packages by running `[-(snapshot_id)]` is if you have your own Brewfile with a specific snapshot ID:
+Restore homebrew packages by running
 ```
 brew bundle --file=~/Brewfile[-(snapshot_id)]
 ```
+`[-(snapshot_id)]` is if you have your own Brewfile with a specific snapshot ID:
+
 Add [fish](https://fishshell.com/) to shells list: `/etc/shells`, use `which fish` to find the path of fish
 
 Update Default shell to fish:
