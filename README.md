@@ -60,7 +60,7 @@ LEAVE ME HERE
 ## Quick Notes
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
  in order to get the full use case of [yabai](https://github.com/xorpse/yabai/)
-* Don't forget to authenticate to [github cli](https://cli.github.com/) using `gh auth login` and [github copilot](https://copilot.github.com/) using `:Copilot setup` if you're using either one
+* Don't forget to authenticate to [Github CLI](https://cli.github.com/) using `gh auth login` and [Github Copilot](https://copilot.github.com/) using `:Copilot setup` if you're using either one
 
 
 ## Installation
@@ -70,7 +70,7 @@ Install [Homebrew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-Install [Git](https://git-scm.com/) and [Stow](https://www.gnu.org/software/stow/manual/stow.html), if you want to use [github cli](https://cli.github.com/), simply change `git` in `brew install git` to `gh`, then authenticate using `gh auth login` if you haven't already
+Install [Git](https://git-scm.com/) and [Stow](https://www.gnu.org/software/stow/manual/stow.html), if you want to use [Github CLI](https://cli.github.com/), simply change `git` in `brew install git` to `gh`, then authenticate using `gh auth login` if you haven't already
 ```
 brew install git && brew install stow
 ```
