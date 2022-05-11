@@ -11,6 +11,7 @@
 
 ## Links to my environment and what I use
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
+* [snazzy](https://github.com/connorholyday/kitty-snazzy) - Colorscheme
 * [simple-bar](https://simple-bar.com/en/) - Status Bar
 * [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
 * [skhd](https://github.com/koekeishiya/skhd/) - Simple Hotkey Daemon
@@ -23,16 +24,20 @@
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
 
 ## References to my dotfiles
-* [kitty]()
-* [spacebar]()
-* [skhd]()
-* [yabai]()
-* [starship]()
-* [fish]()
-* [neovim]()
-* [karabiner]()
-* [stow]()
-* [via (DZ60) layout]()
+* [kitty](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/kitty.conf)
+  * [snazzy colorscheme](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/snazzy.conf)
+* [spacebar](https://github.com/rosacry/.dotfiles/blob/master/.config/spacebar/spacebarrc)
+* [skhd](https://github.com/rosacry/.dotfiles/blob/master/.skhdrc)
+* [yabai](https://github.com/rosacry/.dotfiles/blob/master/.yabairc)
+* [starship](https://github.com/rosacry/.dotfiles/blob/master/.config/starship.toml)
+* [fish](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/config.fish)
+  * [fish variables](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/fish_variables)
+  * [fish aliases](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/alias.fish)
+* [neovim](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/alias.fish)
+  * [with comments](https://github.com/rosacry/.dotfiles/blob/master/.config/nvim/initWithComments.vim)
+* [karabiner](https://github.com/rosacry/.dotfiles/blob/master/karabiner.json)
+* [stow](https://github.com/rosacry/.dotfiles/blob/master/.stowrc)
+* [via (DZ60) layout](https://github.com/rosacry/.dotfiles/blob/master/dz60rgb_v2.json)
 
 
 ## Quick Notes
