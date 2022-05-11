@@ -4,47 +4,61 @@ LEAVE ME HERE
 
 # Contents
 - [Links to my environment and what I use](#links-to-my-environment-and-what-I-use)
+  - [OSX Specific](#osx-specific)
+  - [Linux Specific](#linux-specific)
 - [References to my dotfiles](#references-to-my-dotfiles)
-- [Quick Notes](#quick-notes)
+  - [OSX Specific](#osx-specific)
+  - [Linux Specific](#linux-specific)- [Quick Notes](#quick-notes)
 - [Installation](#installation)
+  - [OSX](#osx)
+  - [Linux](#linux)
 - [Debugging](#debugging)
 
 ## Links to my environment and what I use
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
 * [snazzy](https://github.com/connorholyday/kitty-snazzy) - Colorscheme
-* [simple-bar](https://simple-bar.com/en/) - Status Bar
-* [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
-* [skhd](https://github.com/koekeishiya/skhd/) - Simple Hotkey Daemon
-* [yabai](https://github.com/xorpse/yabai/) - Window Manager
 * [starship](https://starship.rs/) - Shell Prompt
 * [fish](https://fishshell.com/) - Shell
 * [neovim](https://neovim.io/) - Text Editor
 * [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) - Font
-* [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
 * [Wallpaper](wallpaper/mr_robot_5k.jpeg)
+####OSX Specific
+* [simple-bar](https://simple-bar.com/en/) - Status Bar
+* [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
+* [skhd](https://github.com/koekeishiya/skhd/) - Simple Hotkey Daemon
+* [yabai](https://github.com/xorpse/yabai/) - Window Manager
+* [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
+####Linux Specific
+* [i3wm](https://i3wm.org/) - Window Manager
+* [polybar](https://github.com/polybar/polybar) - Status Bar
 
 ## References to my dotfiles
 * [kitty](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/kitty.conf)
   * [snazzy colorscheme](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/snazzy.conf)
-* [spacebar](https://github.com/rosacry/.dotfiles/blob/master/.config/spacebar/spacebarrc)
-* [skhd](https://github.com/rosacry/.dotfiles/blob/master/.skhdrc)
-* [yabai](https://github.com/rosacry/.dotfiles/blob/master/.yabairc)
 * [starship](https://github.com/rosacry/.dotfiles/blob/master/.config/starship.toml)
 * [fish](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/config.fish)
   * [fish variables](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/fish_variables)
   * [fish aliases](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/alias.fish)
 * [neovim](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/alias.fish)
   * [with comments](https://github.com/rosacry/.dotfiles/blob/master/.config/nvim/initWithComments.vim)
-* [karabiner](https://github.com/rosacry/.dotfiles/blob/master/karabiner.json)
 * [stow](https://github.com/rosacry/.dotfiles/blob/master/.stowrc)
+####OSX Specific
+* [spacebar](https://github.com/rosacry/.dotfiles/blob/master/.config/spacebar/spacebarrc)
+* [skhd](https://github.com/rosacry/.dotfiles/blob/master/.skhdrc)
+* [yabai](https://github.com/rosacry/.dotfiles/blob/master/.yabairc)
+* [karabiner](https://github.com/rosacry/.dotfiles/blob/master/karabiner.json)
 * [via (DZ60) layout](https://github.com/rosacry/.dotfiles/blob/master/dz60rgb_v2.json)
 
+####Linux Specific
+* [i3wm]()
+* [polybar]()
 
 ## Quick Notes
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
  in order to get the full use case of [yabai](https://github.com/xorpse/yabai/)
 
 ## Installation
+####OSX
 Install [Homebrew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -87,5 +101,7 @@ Install [neovim](https://neovim.io/) plugins, in `nvim` type
 ```
 :PlugInstall
 ```
+####Linux
+wip
 ## Debugging
 * Reboot
