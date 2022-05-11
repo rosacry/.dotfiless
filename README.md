@@ -7,7 +7,7 @@
 - [References to my dotfiles](#references-to-my-dotfiles)
 - [Quick Notes](#quick-notes)
 - [Installation](#installation)
-
+- [Debugging](#debugging)
 
 ## Links to my environment and what I use
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
@@ -87,4 +87,5 @@ Install [neovim](https://neovim.io/) plugins, in `nvim` type
 ```
 :PlugInstall
 ```
-Should be good to go :) happy coding
+## Debugging
+* Reboot
