@@ -2,7 +2,7 @@
 ![screenshot](wallpaper/mr_robot_5k.jpeg)
 
 
-## Contents
+# Contents
 - [Links to my environment and what I use](#links-to-my-environment-and-what-I-use)
 - [References to my dotfiles](#references-to-my-dotfiles)
 - [Quick Notes](#quick-notes)
