@@ -11,27 +11,34 @@ status --is-interactive; and source (jump shell fish | psub)
 /usr/bin/ssh-add --apple-load-keychain ^/dev/null
 
 # Fish syntax highlighting
-set -g fish_color_autosuggestion '555'  'brblack'
-set -g fish_color_cancel -r
-set -g fish_color_command --bold
-set -g fish_color_comment red
-set -g fish_color_cwd green
-set -g fish_color_cwd_root red
-set -g fish_color_end brmagenta
-set -g fish_color_error brred
-set -g fish_color_escape 'bryellow'  '--bold'
-set -g fish_color_history_current --bold
-set -g fish_color_host normal
-set -g fish_color_match --background=brblue
-set -g fish_color_normal normal
-set -g fish_color_operator bryellow
-set -g fish_color_param cyan
-set -g fish_color_quote yellow
-set -g fish_color_redirection brblue
-set -g fish_color_search_match 'bryellow'  '--background=brblack'
-set -g fish_color_selection 'white'  '--bold'  '--background=brblack'
-set -g fish_color_user brgreen
-set -g fish_color_valid_path --underline
+set -L
+# Colorscheme: Nord
+set -U fish_color_normal normal
+set -U fish_color_command 81a1c1
+set -U fish_color_quote a3be8c
+set -U fish_color_redirection b48ead
+set -U fish_color_end 88c0d0
+set -U fish_color_error ebcb8b
+set -U fish_color_param eceff4
+set -U fish_color_comment 434c5e
+set -U fish_color_match --background=brblue
+set -U fish_color_selection white --bold --background=brblack
+set -U fish_color_search_match bryellow --background=brblack
+set -U fish_color_history_current --bold
+set -U fish_color_operator 00a6b2
+set -U fish_color_escape 00a6b2
+set -U fish_color_cwd green
+set -U fish_color_cwd_root red
+set -U fish_color_valid_path --underline
+set -U fish_color_autosuggestion 4c566a
+set -U fish_color_user brgreen
+set -U fish_color_host normal
+set -U fish_color_cancel --reverse
+set -U fish_pager_color_prefix normal --bold --underline
+set -U fish_pager_color_progress brwhite --background=cyan
+set -U fish_pager_color_completion normal
+set -U fish_pager_color_description B3A06D
+set -U fish_pager_color_selected_background --background=brblack
 
 alias python='python3'
 alias matlab="/Applications/MATLAB_R2021b.app/bin/matlab -nodesktop"

@@ -2,11 +2,9 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'projekt0n/github-nvim-theme'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
-Plug 'itchyny/lightline.vim'
 Plug 'amix/open_file_under_cursor.vim'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-commentary'
@@ -17,7 +15,9 @@ Plug 'github/copilot.vim'
 Plug 'preservim/nerdtree'
 Plug 'semanser/vim-outdated-plugins'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-surround'
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 map! <F1> <nop>
 map! <F2> <nop>
@@ -43,20 +43,24 @@ set cindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-let g:lightline = {
-      \ 'colorscheme': 'one',
-      \ 'background': 'dark',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified'] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
 set laststatus=2
 set noshowmode
-colorscheme github_dark
+let g:nord_cursor_line_number_background = 1
+let g:nord_bold_vertical_split_line = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_uniform_status_lines = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#whitespace#enabled = 0
+syntax enable
+set background=dark
+let g:airline_powerline_fonts = 1
+let g:airline_section_error = ''
+let g:airline_section_warning = ''
+let g:airline_theme='nord'
+colorscheme nord
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -176,10 +180,10 @@ let g:ale_fix_on_save = 1
 map K <Plug>(expand_region_expand)
 map J <Plug>(expand_region_shrink)
 let g:multi_cursor_select_all_word_key = '<C-b>'
-let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
-let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
-let s:palette.inactive.middle = s:palette.normal.middle
-let s:palette.tabline.middle = s:palette.normal.middle
+" let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
+" let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+" let s:palette.inactive.middle = s:palette.normal.middle
+" let s:palette.tabline.middle = s:palette.normal.middle
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <F6> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
