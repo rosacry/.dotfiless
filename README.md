@@ -1,5 +1,5 @@
 # My dotfiles
-![screenshot](wallpaper/mr_robot_5k.jpeg)
+![screenshot](wallpaper/adrenaline.png)
 LEAVE ME HERE
 
 # Contents
@@ -23,7 +23,7 @@ LEAVE ME HERE
 * [fish](https://fishshell.com/) - Shell
 * [neovim](https://neovim.io/) - Text Editor
 * [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) - Font
-* [Wallpaper](wallpaper/mr_robot_5k.jpeg)
+* [Wallpaper](wallpaper/adrenaline.png)
 
 ### OSX Specific
 * [simple-bar](https://simple-bar.com/en/) - Status Bar
