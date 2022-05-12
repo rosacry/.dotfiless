@@ -1,6 +1,5 @@
 # My dotfiles
 ![screenshot](wallpaper/adrenaline.png)
-LEAVE ME HERE
 
 # Contents
 - [Links to my environment and what I use](#links-to-my-environment-and-what-I-use)
