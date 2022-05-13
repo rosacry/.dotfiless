@@ -46,9 +46,14 @@ set -U fish_pager_color_selected_background --background=brblack
 
 alias python='python3'
 alias matlab="/Applications/MATLAB_R2021b.app/bin/matlab -nodesktop"
-alias nvimc=“nvim ~/.config/nvim/init.vim”
-alias nvimcc=“nvim ~/.config/nvim/initWithComments.vim”
 
+function nvimc
+  nvim ~/.config/nvim/init.vim
+end
+
+function nvimcc
+  nvim ~/.config/nvim/initWithComments.vim
+end
 
 # git add, commit and push commands in one line :)
 function gitt

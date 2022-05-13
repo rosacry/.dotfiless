@@ -36,6 +36,7 @@
 ### Linux Specific
 * [i3wm](https://i3wm.org/) - Window Manager
 * [polybar](https://github.com/polybar/polybar) - Status Bar
+* [ly](https://github.com/fairyglade/ly) - Display Manager
 
 ## References to my dotfiles
 * [kitty](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/kitty.conf)
@@ -60,6 +61,7 @@
 ### Linux Specific
 * [i3wm]()
 * [polybar]()
+* [ly]()
 
 ## Quick Notes
 *  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
