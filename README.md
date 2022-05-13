@@ -10,6 +10,7 @@
   - [Linux Specific](#linux-specific)
 - [Quick Notes](#quick-notes)
 - [Installation](#installation)
+  - [Manual Installation](#manual-installation)
   - [OSX](#osx)
   - [Linux](#linux)
   - [Windows](#windows)
@@ -17,6 +18,7 @@
 
 ## Links to my environment and what I use
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
+* [tmux](https://github.com/tmux/tmux/wiki) - Second Terminal Emulator
 * [nord](https://www.nordtheme.com/) - Colorscheme
 * [starship](https://starship.rs/) - Shell Prompt
 * [fish](https://fishshell.com/) - Shell
@@ -37,6 +39,7 @@
 
 ## References to my dotfiles
 * [kitty](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/kitty.conf)
+* [tmux](https://github.com/rosacry/.dotfiles/blob/master/.tmux.conf)
 * [starship](https://github.com/rosacry/.dotfiles/blob/master/.config/starship.toml)
 * [fish](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/config.fish)
   * [fish variables](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/fish_variables)
@@ -66,7 +69,8 @@
 
 ## Installation
 
-### OSX
+### Manual Installation
+#### OSX
 Install [Homebrew](https://brew.sh/)
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -119,10 +123,10 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 ```
 
-### Linux
+#### Linux
 wip
 
-### Windows
+#### Windows
 yea u thought lol
-## Debugging
+### Debugging
 * try rebooting
