@@ -87,6 +87,10 @@ function brewRestore
   echo "Brew List Restored"
 end
 
+function tmuxDestroy
+  tmux kill-server
+end
+
 if status is-interactive
 and not set -q TMUX
     exec tmux

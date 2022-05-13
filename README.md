@@ -41,8 +41,10 @@
 * [fish](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/config.fish)
   * [fish variables](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/fish_variables)
   * [fish aliases](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/alias.fish)
-* [neovim](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/alias.fish)
+  * [fish variables](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/fish_variables)
+* [neovim](https://github.com/rosacry/.dotfiles/blob/master/.config/nvim/init.vim)
   * [with comments](https://github.com/rosacry/.dotfiles/blob/master/.config/nvim/initWithComments.vim)
+  * [coc-settings](https://github.com/rosacry/.dotfiles/blob/master/.config/nvim/coc-settings.json)
 * [stow](https://github.com/rosacry/.dotfiles/blob/master/.stowrc)
 
 ### OSX Specific
