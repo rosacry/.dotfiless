@@ -69,6 +69,15 @@ let g:airline_symbols.clean =''
 let g:airline_section_z = "%p%% %l/%L:%c"
 colorscheme nord
 autocmd BufEnter * :AirlineTheme nord
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'b'    : '#W',
+      \'c'    : '',
+      \'win'  : '#I #W',
+      \'cwin' : '#I #W',
+      \'x'    : '',
+      \'y'    : '%a %R',
+      \'z'    : '#H'}
 let g:coc_global_extensions = [
   \ 'coc-ccls',
   \ 'coc-clangd',
