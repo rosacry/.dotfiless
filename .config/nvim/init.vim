@@ -64,8 +64,8 @@ let g:airline_section_error = ''
 let g:airline_section_warning = ''
 let g:airline_symbols = {}
 let g:airline_symbols.notexists = ' ∄'
-let g:airline_symbols.dirty =' ✗'
-let g:airline_symbols.clean =' ✓'
+let g:airline_symbols.dirty =' !'
+let g:airline_symbols.clean =''
 let g:airline_section_z = "%p%% %l/%L:%c"
 colorscheme nord
 autocmd BufEnter * :AirlineTheme nord
