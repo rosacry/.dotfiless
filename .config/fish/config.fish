@@ -64,6 +64,7 @@ end
 
 function u
   brew update && brew upgrade
+  echo "Brew Updated"
 end
 
 function c
@@ -72,6 +73,19 @@ end
 
 function stoww
   stow --adopt -t ~/ .
+  echo "Stow Complete"
+end
+
+function brewBackup
+  rm ~/Brewfile
+  brew tap Homebrew/bundle
+  brew bundle dump
+  echo "Brew List Backed Up"
+end
+
+function brewRestore
+  brew bundle --file=$argv
+  echo "Brew List Restored"
 end
 
 # Install Starship

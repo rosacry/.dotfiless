@@ -98,18 +98,15 @@ Add [fish](https://fishshell.com/) to shells list `/etc/shells` and update defau
 ```
 which fish >> /etc/shells && chsh -s /opt/homebrew/bin/fish
 ```
-Install and Update [neovim](https://neovim.io/) plugins, in `nvim` type
-```
-:PlugInstall
-```
-and
-```
-:PlugUpdate
-```
 Update brew
 ```
 brew update && brew upgrade
 ```
+Install and Update [neovim](https://neovim.io/) plugins, in `nvim` type
+```
+mkdir ~/.config/nvim/plugged && nvim +PlugInstall +CocInstall +qa!
+```
+In nvim, I mapped this to `Ctrl-]`/`C-]`
 #### Optional
 ##### Disable animations when opening and closing windows.
 ```

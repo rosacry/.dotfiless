@@ -13,9 +13,11 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'github/copilot.vim'
 Plug 'preservim/nerdtree'
-Plug 'semanser/vim-outdated-plugins'
+Plug 'thisisrandy/vim-outdated-plugins'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-surround'
 Plug 'arcticicestudio/nord-vim'
+"Plug 'projekt0n/github-nvim-theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
@@ -45,6 +47,8 @@ set shiftwidth=2
 set expandtab
 set laststatus=2
 set noshowmode
+syntax enable
+set background=dark
 let g:nord_cursor_line_number_background = 1
 let g:nord_bold_vertical_split_line = 1
 let g:nord_uniform_diff_background = 1
@@ -54,14 +58,19 @@ let g:nord_italic_comments = 1
 let g:nord_underline = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#whitespace#enabled = 0
-syntax enable
-set background=dark
 let g:airline_powerline_fonts = 1
 let g:airline_section_error = ''
 let g:airline_section_warning = ''
-let g:airline_theme='nord'
+let g:airline_symbols = {}
+let g:airline_symbols.notexists = ' ∄'
+let g:airline_symbols.dirty =' ✗'
+let g:airline_symbols.clean =' ✓'
+let g:airline_section_z = "%p%% %l/%L:%c"
 colorscheme nord
+autocmd BufEnter * :AirlineTheme nord
 let g:coc_global_extensions = [
+  \ 'coc-ccls',
+  \ 'coc-clangd',
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-tsserver',
@@ -70,7 +79,7 @@ let g:coc_global_extensions = [
   \ 'coc-pyright',
   \ 'coc-java',
   \ 'coc-jedi',
-  \ 'coc-json',
+  \ 'coc-json'
   \ ]
 let g:coc_snippet_next = '<Down>'
 let g:coc_snippet_prev = '<Up>'
@@ -180,10 +189,6 @@ let g:ale_fix_on_save = 1
 map K <Plug>(expand_region_expand)
 map J <Plug>(expand_region_shrink)
 let g:multi_cursor_select_all_word_key = '<C-b>'
-" let s:palette = g:lightline#colorscheme#{g:lightline.colorscheme}#palette
-" let s:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
-" let s:palette.inactive.middle = s:palette.normal.middle
-" let s:palette.tabline.middle = s:palette.normal.middle
 nnoremap <F5> :NERDTreeToggle<CR>
 nnoremap <F6> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
@@ -191,7 +196,7 @@ vnoremap y "*y
 nnoremap yy "*yy
 autocmd BufEnter * lcd %:p:h
 nnoremap <F1> :Rename
-"nnoremap <F2> :Move
+nnoremap <F2> :Move
 nnoremap <F3> :Wall
 nnoremap <F4> :Remove
 imap <silent><script><expr> <C-A> copilot#Accept("\<CR>")
@@ -222,7 +227,6 @@ function! s:Git(args)
   :Git push
 endfunction
 command! -nargs=1 Gitt call s:Git(<f-args>)
-nnoremap <F11> :PlugUpdate<Return>
 nnoremap <F12> :source %<Return>
 nnoremap <silent> gs :call <SID>show_documentation()<CR>
 function! s:show_documentation()
@@ -232,3 +236,9 @@ function! s:show_documentation()
     call feedkeys('K', 'in')
   endif
 endfunction
+let g:outdated_plugins_silent_mode = 1
+augroup AutoChdir
+  autocmd!
+  autocmd BufEnter * if &buftype !=# 'terminal' | lchdir %:p:h | endif
+augroup END
+nnoremap <F11> :PlugInstall<CR> <bar> :CocInstall<CR> <bar> :PlugUpgrade<CR> <bar> :PlugUpdate<CR> <bar> :CocRebuild<CR> <bar> :CocUpdate<CR> <bar> :q <bar> :q

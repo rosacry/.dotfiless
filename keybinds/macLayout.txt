@@ -1,9 +1,0 @@
-Unchanged:
-Left Option
-Left Command
-Right Command
-
-Changed:
-Caps Lock -> Escape
-Left Control -> Alt (Option)
-Option -> Right Control
