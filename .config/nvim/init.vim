@@ -68,6 +68,7 @@ let g:airline_symbols.dirty =' !'
 let g:airline_symbols.clean =''
 let g:airline_section_z = "%p%% %l/%L:%c"
 colorscheme nord
+let g:airline_theme = 'nord'
 autocmd BufEnter * :AirlineTheme nord
 let g:tmuxline_preset = {
       \'a'    : '#S',
@@ -176,7 +177,7 @@ function CompileRunFileType()
     :!python3 %:r.py
   endif
 endfunction
-nnoremap <silent> <F7> :call CompileRunFileType()<CR>
+nnoremap <silent><F7> :call CompileRunFileType()<CR>
 map <F8> :cprevious<Return>
 map <F9> :cnext<Return>
 set wrap linebreak
@@ -237,7 +238,8 @@ function! s:Git(args)
   :Git push
 endfunction
 command! -nargs=1 Gitt call s:Git(<f-args>)
-nnoremap <F12> :source %<Return>
+nnoremap <C-]> :vsp $MYVIMRC<CR>
+nnoremap <F12>  :silent! source $MYVIMRC<CR> <bar> :echo "nvim config reloaded"<CR>
 nnoremap <silent> gs :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if CocAction('hasProvider', 'hover')

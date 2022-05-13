@@ -10,6 +10,10 @@ status --is-interactive; and source (jump shell fish | psub)
 # Load all saved ssh keys
 /usr/bin/ssh-add --apple-load-keychain ^/dev/null
 
+#fish vi mode
+fish_vi_key_bindings
+set -g fish_escape_delay_ms 10
+
 # Fish syntax highlighting
 set -L
 # Colorscheme: Nord
@@ -42,6 +46,9 @@ set -U fish_pager_color_selected_background --background=brblack
 
 alias python='python3'
 alias matlab="/Applications/MATLAB_R2021b.app/bin/matlab -nodesktop"
+alias nvimc=“nvim ~/.config/nvim/init.vim”
+alias nvimcc=“nvim ~/.config/nvim/initWithComments.vim”
+
 
 # git add, commit and push commands in one line :)
 function gitt
@@ -100,5 +107,8 @@ end
 starship init fish | source
 
 set fish_greeting ""
+
+ssh -T github
+
 
 c
