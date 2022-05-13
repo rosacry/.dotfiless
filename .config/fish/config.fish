@@ -64,7 +64,6 @@ end
 
 function u
   brew update && brew upgrade
-  echo "Brew Updated"
 end
 
 function c
