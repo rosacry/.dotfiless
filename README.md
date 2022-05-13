@@ -17,7 +17,7 @@
 
 ## Links to my environment and what I use
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
-* [snazzy](https://github.com/connorholyday/kitty-snazzy) - Colorscheme
+* [nord](https://www.nordtheme.com/) - Colorscheme
 * [starship](https://starship.rs/) - Shell Prompt
 * [fish](https://fishshell.com/) - Shell
 * [neovim](https://neovim.io/) - Text Editor
@@ -37,7 +37,6 @@
 
 ## References to my dotfiles
 * [kitty](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/kitty.conf)
-  * [snazzy colorscheme](https://github.com/rosacry/.dotfiles/blob/master/.config/kitty/snazzy.conf)
 * [starship](https://github.com/rosacry/.dotfiles/blob/master/.config/starship.toml)
 * [fish](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/config.fish)
   * [fish variables](https://github.com/rosacry/.dotfiles/blob/master/.config/fish/fish_variables)
