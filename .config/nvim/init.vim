@@ -20,6 +20,7 @@ Plug 'arcticicestudio/nord-vim'
 "Plug 'projekt0n/github-nvim-theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
 call plug#end()
 map! <F1> <nop>
 map! <F2> <nop>

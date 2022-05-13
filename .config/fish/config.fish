@@ -87,6 +87,11 @@ function brewRestore
   echo "Brew List Restored"
 end
 
+if status is-interactive
+and not set -q TMUX
+    exec tmux
+end
+
 # Install Starship
 starship init fish | source
 
