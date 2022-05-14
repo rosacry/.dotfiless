@@ -124,6 +124,10 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 ```
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 ```
+#### Enable access to unverified/unidentified developer apps on mac (must execute in recovery mode)
+```
+sudo spctl –master-disable
+```
 
 #### Linux
 wip
