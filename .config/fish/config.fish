@@ -103,6 +103,15 @@ function tmuxDestroy
   tmux kill-server
 end
 
+function ignore
+  git reset $argv
+  git rm --cached $argv
+  if not test -e .gitignore
+    touch .gitignore
+  $argv >> .gitignore
+  end
+end
+
 if status is-interactive
 and not set -q TMUX
     exec tmux
