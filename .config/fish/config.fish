@@ -108,8 +108,8 @@ function ignore
   git rm --cached $argv
   if not test -e .gitignore
     touch .gitignore
-  $argv >> .gitignore
   end
+  echo "$argv" >> .gitignore
 end
 
 if status is-interactive
