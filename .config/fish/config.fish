@@ -1,8 +1,8 @@
 source ~/.config/fish/alias.fish
 
-set -x PATH /opt/homebrew/bin:$PATH
-set -x JAVA_HOME $(/usr/libexec/java_home)
-set -x EDITOR 'nvim'
+set PATH /opt/homebrew/bin:$PATH
+set JAVA_HOME $(/usr/libexec/java_home)
+set EDITOR 'nvim'
 
 # Configure Jump
 status --is-interactive; and source (jump shell fish | psub)
@@ -119,7 +119,7 @@ end
 
 function unignore
   if test -e $argv; and grep -r $argv .gitignore
-    sed -i .bak 's/$argv/d' .gitignore
+    sed -i .bak '/$argv/d' .gitignore
     echo "$argv removed from .gitignore"
   else
     echo "$argv is either not in either directory and/or in .gitignore!"
