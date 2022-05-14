@@ -256,6 +256,18 @@
                             "key_code": "right_control"
                         }
                     ]
+                },
+                {
+                    "from": {
+                        "key_code": "f12"
+                    },
+                    "to": [
+                        {
+                            "software_function": {
+                                "iokit_power_management_sleep_system": {}
+                            }
+                        }
+                    ]
                 }
             ],
             "virtual_hid_keyboard": {

@@ -239,7 +239,7 @@ function! s:Git(args)
 endfunction
 command! -nargs=1 Gitt call s:Git(<f-args>)
 nnoremap <C-]> :vsp $MYVIMRC<CR>
-nnoremap <F12>  :silent! source $MYVIMRC<CR> <bar> :echo "nvim config reloaded"<CR>
+"nnoremap <F12>  :silent! source $MYVIMRC<CR> <bar> :echo "nvim config reloaded"<CR>
 nnoremap <silent> gs :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if CocAction('hasProvider', 'hover')
