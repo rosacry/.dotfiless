@@ -119,7 +119,7 @@ end
 
 function unignore
   if test -e $argv; and grep -r $argv .gitignore
-    sed -i .bak 's/$argv//g' .gitignore
+    sed -i .bak 's/$argv/d' .gitignore
     echo "$argv removed from .gitignore"
   else
     echo "$argv is either not in either directory and/or in .gitignore!"
