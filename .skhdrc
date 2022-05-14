@@ -89,7 +89,7 @@ alt - 0x2A : yabai -m window --grid 1:1:0:0:1:1
 
 # toggle window native fullscreen
 alt + shift - 0x2A : yabai -m window --toggle native-fullscreen
-alt - return: open -n ~/kitty/kitty.app
+alt - return: open -n /Applications/kitty.app/
 
 #If padding is needed...
 #yabai -m config external_bar all:26:0
