@@ -104,12 +104,26 @@ function tmuxDestroy
 end
 
 function ignore
-  git reset $argv
-  git rm --cached $argv
-  if not test -e .gitignore
-    touch .gitignore
+  if test -e $argv
+    git reset $argv
+    git rm --cached $argv
+    if not test -e .gitignore
+      touch .gitignore
+    end
+    echo "$argv" >> .gitignore
+    echo "$argv ignored from git"
+  else
+    echo "$argv not found!"
   end
-  echo "$argv" >> .gitignore
+end
+
+function unignore
+  if test -e $argv; and grep -r $argv .gitignore
+    sed -i .bak 's/$argv//g' .gitignore
+    echo "$argv removed from .gitignore"
+  else
+    echo "$argv is either not in either directory and/or in .gitignore!"
+  end
 end
 
 if status is-interactive
