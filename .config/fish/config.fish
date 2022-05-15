@@ -99,7 +99,7 @@ function brewRestore
   echo "Brew List Restored"
 end
 
-function tmuxDestroy
+function kill
   tmux kill-server
 end
 

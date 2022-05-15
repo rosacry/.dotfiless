@@ -162,9 +162,6 @@ function CompileFileType()
   elseif (&ft=='java')
     echo "Compiling..."
     :silent :w | :silent :make
-  elseif (&ft=='python')
-    echo "Compiling..."
-    :silent :!python3 -m py_compile<Return>
   endif
 endfunction
 function CompileRunFileType()
