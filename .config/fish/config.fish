@@ -99,10 +99,6 @@ function brewRestore
   echo "Brew List Restored"
 end
 
-function kill
-  tmux kill-server
-end
-
 function ignore
   if test -e $argv
     git reset $argv
