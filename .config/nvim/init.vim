@@ -250,4 +250,4 @@ augroup AutoChdir
   autocmd!
   autocmd BufEnter * if &buftype !=# 'terminal' | lchdir %:p:h | endif
 augroup END
-nnoremap <F11> :PlugInstall<CR> <bar> :CocInstall<CR> <bar> :PlugUpgrade<CR> <bar> :PlugUpdate<CR> <bar> :CocRebuild<CR> <bar> :CocUpdate<CR> <bar> :q <bar> :q
+" nnoremap <F11> :PlugInstall<CR> <bar> :CocInstall<CR> <bar> :PlugUpgrade<CR> <bar> :PlugUpdate<CR> <bar> :CocRebuild<CR> <bar> :CocUpdate<CR> <bar> :q <bar> :q
