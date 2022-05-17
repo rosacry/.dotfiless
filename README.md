@@ -69,8 +69,11 @@
 * [ly]()
 
 ## Quick Notes
-*  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum
- in order to get the full use case of [yabai](https://github.com/xorpse/yabai/)
+*  For M1 Macbooks running Catalina and Monterey, you must go through [this](https://github.com/koekeishiya/yabai/issues/1054) forum in order to get the full use case of [yabai](https://github.com/xorpse/yabai/). Once you go into recovery mode when following the fourm, you can also enable access to unverified/unidentified developer apps on mac using
+```
+sudo spctl –master-disable
+ ```
+ This command is completely optional, but I enabled it to allow keybinds to open programs such as the kitty terminal emulator
 * Don't forget to authenticate to [Github CLI](https://cli.github.com/) using `gh auth login` and [Github Copilot](https://copilot.github.com/) using `:Copilot setup` if you're using either one
 * Make sure to install `wget` before continuing with installing
 
@@ -149,7 +152,7 @@ sudo spctl –master-disable
 wip
 
 ## Uninstall
-cd into the .dotfiles directory, then run the following shell script based on your OS
+`cd` into the `.dotfiles` directory, then run the following shell script based on your OS
 ### OSX Uninstaller
 ```
 uninstallers/macuninstall.sh
