@@ -81,11 +81,11 @@ sudo spctl –master-disable
 ## Installation
 ### OSX Installer
 ```
-wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/macinstall.sh && macinstall.sh
+wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/macinstall.sh && ./macinstall.sh
 ```
 ### Linux Installer
 ```
-wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/linuxinstall.sh && linuxinstall.sh
+wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/linuxinstall.sh && ./linuxinstall.sh
 ```
 ### Manual Installation
 #### OSX
@@ -113,7 +113,7 @@ Now we can `git pull` in this local repository if there are ever changes/updates
 
 If you already have [homebrew](https://brew.sh/) installed and want to add on to your current packages, run this command in the .dotfile directory
 ```
-installers/brewInstaller.sh
+./installers/brewInstaller.sh
 ```
 `BackupBrew` has been created in the .dotfiles directory in any case you decide to revert back to your original brew packages, if you decide to, you can run the next command, replacing `BrewfileName` with the backup you created called `BackupBrew`
 If this is your first time installing homebrew you can skip the previous step and download my packages list
@@ -155,15 +155,15 @@ wip
 `cd` into the `.dotfiles` directory, then run the following shell script based on your OS
 ### OSX Uninstaller
 ```
-uninstallers/macuninstall.sh
+./uninstallers/macuninstall.sh
 ```
 #### Brew Restore
 ```
-uninstallers/brewRestore.sh
+./uninstallers/brewRestore.sh
 ```
 ### Linux Uninstaller
 ```
-uninstallers/linuxuninstall.sh
+./uninstallers/linuxuninstall.sh
 ```
 ### Debugging
 * try rebooting
