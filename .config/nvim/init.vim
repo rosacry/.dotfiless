@@ -69,7 +69,10 @@ let g:airline_symbols.clean =''
 let g:airline_section_z = "%p%% %l/%L:%c"
 colorscheme nord
 let g:airline_theme = 'nord'
-autocmd BufEnter * :AirlineTheme nord
+augroup StatusBar
+  autocmd!
+  autocmd BufEnter * :AirlineTheme nord
+augroup END
 let g:tmuxline_preset = {
       \'a'    : '#S',
       \'b'    : '#W',
@@ -153,7 +156,10 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap " ""<Esc>i
-autocmd Filetype java set makeprg=javac\ %
+augroup JavaCompile
+  autocmd!
+  autocmd Filetype java set makeprg=javac\ %
+augroup END
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 function CompileFileType()
   if (&ft=='c' || &ft=='cpp')
@@ -178,7 +184,10 @@ nnoremap <silent><F7> :call CompileRunFileType()<CR>
 map <F8> :cprevious<Return>
 map <F9> :cnext<Return>
 set wrap linebreak
-autocmd BufWritePre * :%s/\s\+$//e
+augroup TrailingWhitespace
+  autocmd!
+  autocmd BufWritePre * :%s/\s\+$//e
+augroup END
 let g:ale_linters= {
  \   'python': ['flake8'],
  \   'cpp': ['cc', 'gcc', 'clang'],
@@ -202,7 +211,10 @@ nnoremap <F6> :NERDTreeCWD<CR>
 let NERDTreeShowHidden=1
 vnoremap y "*y
 nnoremap yy "*yy
-autocmd BufEnter * lcd %:p:h
+augroup CurrDirectory
+  autocmd!
+  autocmd BufWinEnter * lcd %:p:h
+augroup END
 nnoremap <F1> :Rename
 nnoremap <F2> :Move
 nnoremap <F3> :Wall

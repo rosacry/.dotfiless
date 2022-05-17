@@ -110,4 +110,4 @@ set fish_greeting ""
 
 ssh -T github
 
-c
+clear
