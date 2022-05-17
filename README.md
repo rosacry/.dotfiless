@@ -71,9 +71,13 @@
 
 ## Installation
 ### OSX
-
+```
+wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/macinstall.sh && macinstall.sh
+```
 ### Linux
-
+``
+wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/linuxinstall.sh && linuxinstall.sh
+```
 ### Manual Installation
 #### OSX
 Install [Homebrew](https://brew.sh/)
@@ -98,9 +102,9 @@ stow --adopt -t ~/ .
 ```
 Now we can `git pull` in this local repository if there are ever changes/updates made to the online repository
 
-If you already have homebrew installed and want to add on to your current packages, run this command
+If you already have [homebrew](https://brew.sh/) installed and want to add on to your current packages, run this command in the .dotfile directory
 ```
-installers/brewFiles.sh
+installers/brewInstaller.sh
 ```
 `BackupBrew` has been created in the .dotfiles directory in any case you decide to revert back to your original brew packages, if you decide to, you can run the next command, replacing `BrewfileName` with the backup you created called `BackupBrew`
 If this is your first time installing homebrew you can skip the previous step and download my packages list
