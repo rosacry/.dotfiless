@@ -95,12 +95,15 @@ stow --adopt -t ~/ .
 ```
 Now we can `git pull` in this local repository if there are ever changes/updates made to the online repository
 
-Restore homebrew packages by running
+If you already have homebrew installed and want to add on to your current packages, run this command
 ```
-brew bundle --file=~/Brewfile[-(snapshot_id)]
+installers/brewFiles.sh
 ```
-`[-(snapshot_id)]` is if you have your own Brewfile with a specific snapshot ID
-
+`BackupBrew` has been created in the .dotfiles directory in any case you decide to revert back to your original brew packages, if you decide to, you can run the next command, replacing `BrewfileName` with the backup you created called `BackupBrew`
+If this is your first time installing homebrew you can skip the previous step and download my packages list
+```
+brew bundle --file=(BrewfileName)
+```
 Add [fish](https://fishshell.com/) to shells list `/etc/shells` and update default shell to fish
 ```
 which fish >> /etc/shells && chsh -s /opt/homebrew/bin/fish

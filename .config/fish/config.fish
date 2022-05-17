@@ -47,14 +47,6 @@ set -U fish_pager_color_selected_background --background=brblack
 alias python='python3'
 alias matlab="/Applications/MATLAB_R2021b.app/bin/matlab -nodesktop"
 
-function nvimc
-  nvim ~/.config/nvim/init.vim
-end
-
-function nvimcc
-  nvim ~/.config/nvim/initWithComments.vim
-end
-
 # git add, commit and push commands in one line :)
 function gitt
  	git --git-dir=$PWD/.git add . # Stage all unstaged files
@@ -64,22 +56,6 @@ end
 
 function gittU
   git push --set-upstream origin master
-end
-
-function p
-  cd ..
-end
-
-function configs
-  cd ~/prog/git/.dotfiles/
-end
-
-function u
-  brew update && brew upgrade
-end
-
-function c
-  clear
 end
 
 function stoww
@@ -133,6 +109,5 @@ starship init fish | source
 set fish_greeting ""
 
 ssh -T github
-
 
 c
