@@ -17,11 +17,7 @@ _darcs
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 
-macinstall.sh
-
-linuxinstall.sh
-
-brewFiles.sh
+installers/*
 
 ^/README.*
 ^/LICENSE.*
