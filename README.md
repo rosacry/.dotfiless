@@ -70,6 +70,9 @@
 
 
 ## Installation
+### OSX
+
+### Linux
 
 ### Manual Installation
 #### OSX
