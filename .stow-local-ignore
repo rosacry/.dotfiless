@@ -23,7 +23,6 @@ linuxinstall.sh
 
 brewFiles.sh
 
-
 ^/README.*
 ^/LICENSE.*
 ^/COPYING

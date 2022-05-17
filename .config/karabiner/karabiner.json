@@ -239,11 +239,13 @@
                 },
                 {
                     "from": {
-                        "key_code": "left_control"
+                        "key_code": "f12"
                     },
                     "to": [
                         {
-                            "key_code": "left_option"
+                            "software_function": {
+                                "iokit_power_management_sleep_system": {}
+                            }
                         }
                     ]
                 },
@@ -254,18 +256,6 @@
                     "to": [
                         {
                             "key_code": "right_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "f12"
-                    },
-                    "to": [
-                        {
-                            "software_function": {
-                                "iokit_power_management_sleep_system": {}
-                            }
                         }
                     ]
                 }
