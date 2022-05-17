@@ -16,6 +16,8 @@ done <BackupBrewfile
 brew bundle --file=Brewfile
 which fish >> /etc/shells && chsh -s /opt/homebrew/bin/fish
 brew update && brew upgrade
-mkdir ~/.config/nvim/plugged && nvim +PlugInstall +CocInstall +PlugUpgrade +PlugUpdate +CocUpdate +CocRebuild +qa!
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' && mkdir ~/.config/nvim/plugged && nvim +PlugInstall +CocInstall +PlugUpgrade +PlugUpdate +CocUpdate +CocRebuild +qa!
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001

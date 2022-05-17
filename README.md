@@ -24,10 +24,12 @@
 ## Links to my environment and what I use
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
 * [tmux](https://github.com/tmux/tmux/wiki) - Second Terminal Emulator
+  * [tpm](https://github.com/tmux-plugins/tpm) - tmux Plugin Manager
 * [nord](https://www.nordtheme.com/) - Colorscheme
 * [starship](https://starship.rs/) - Shell Prompt
 * [fish](https://fishshell.com/) - Shell
 * [neovim](https://neovim.io/) - Text Editor
+  [vim-plug](https://github.com/junegunn/vim-plug) - Neovim Plugin Manager
 * [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) - Font
 * [Wallpaper](wallpaper/adrenaline.png)
 
@@ -128,11 +130,17 @@ Update brew
 ```
 brew update && brew upgrade
 ```
-Install and Update [neovim](https://neovim.io/) plugins, in `nvim` type
+Install and Update [vim-plug](https://github.com/junegunn/vim-plug)[neovim](https://neovim.io/) plugins, in `nvim` type
 ```
-mkdir ~/.config/nvim/plugged && nvim +PlugInstall +CocInstall +qa!
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+ && mkdir ~/.config/nvim/plugged && nvim +PlugInstall +CocInstall +qa!
 ```
-In nvim, I mapped this to `Ctrl-]`/`C-]`
+In [tmux](https://github.com/tmux/tmux/wiki), I mapped this to `prefix+p`/```-p``
+Install tmux plugin manager, [tpm]($ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm)
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
 #### Optional
 ##### Disable animations when opening and closing windows.
 ```

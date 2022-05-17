@@ -20,7 +20,7 @@ Plug 'arcticicestudio/nord-vim'
 "Plug 'projekt0n/github-nvim-theme'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
+" Plug 'edkolev/tmuxline.vim'
 call plug#end()
 map! <F1> <nop>
 map! <F2> <nop>
@@ -67,21 +67,19 @@ let g:airline_symbols.notexists = ' ∄'
 let g:airline_symbols.dirty =' !'
 let g:airline_symbols.clean =''
 let g:airline_section_z = "%p%% %l/%L:%c"
+ " let g:airline_extensions = ['ale', 'coc', 'fugitiveline', 'hunks', 'keymap', 'netrw', 'nvimlsp', 'po', 'quickfix', 'searchcount', 'term', 'wordcount']
 colorscheme nord
 let g:airline_theme = 'nord'
-augroup StatusBar
-  autocmd!
-  autocmd BufEnter * :AirlineTheme nord
-augroup END
-let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'b'    : '#W',
-      \'c'    : '',
-      \'win'  : '#I #W',
-      \'cwin' : '#I #W',
-      \'x'    : '',
-      \'y'    : '%a %R',
-      \'z'    : '#H'}
+" let g:airline#extensions#tmuxline#enabled = 0
+" let g:tmuxline_preset = {
+"       \'a'    : '#S',
+"       \'b'    : '#W',
+"       \'c'    : '',
+"       \'win'  : '#I #W',
+"       \'cwin' : '#I #W',
+"       \'x'    : '',
+"       \'y'    : '%a %R',
+"       \'z'    : '#H'}
 let g:coc_global_extensions = [
   \ 'coc-ccls',
   \ 'coc-clangd',
