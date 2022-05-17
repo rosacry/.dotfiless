@@ -81,7 +81,7 @@
 wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/macinstall.sh && macinstall.sh
 ```
 ### Linux Installer
-``
+```
 wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/linuxinstall.sh && linuxinstall.sh
 ```
 ### Manual Installation
