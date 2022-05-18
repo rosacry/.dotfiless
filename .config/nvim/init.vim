@@ -80,7 +80,7 @@ let g:lightline = {
   \ 'component_function': {
   \   'zoom': 'zoom#statusline',
   \   'githunks': 'LightlineGitGutter',
-  \   'gitbranch': 'FugitiveHead',
+  \   'gitbranch': 'Lightlinegit',
   \   'filename': 'LightlineFilename',
   \   'method': 'NearestMethodOrFunction'
   \ },
@@ -92,6 +92,11 @@ let g:lightline#bufferline#min_buffer_count = 2
 let g:lightline#bufferline#show_number      = 1
 let g:lightline#bufferline#unicode_symbols  = 1
 let g:lightline#trailing_whitespace#indicator = '•'
+
+function! Lightlinegit()
+    " let l:branch = fugitive#head()
+    " return l:branch ==# '' ? '' : 'Ψ ' . l:branch
+endfunction
 
 function! LightlineGitGutter()
   if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())

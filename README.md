@@ -141,6 +141,17 @@ Install tmux plugin manager, [tpm]($ git clone https://github.com/tmux-plugins/t
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+Install my fonts I use
+```
+# clone
+git clone https://github.com/rosacry/chrigfonts.git --depth=1
+# install
+cd chrigfonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+```
 If you are running OSX >= 10.15.5 with tmux >= 3.1b, follow these steps to enable true (256) colors
 ```
 sudo curl -LO https://invisible-island.net/datafiles/current/terminfo.src.gz && gunzip terminfo.src.gz && /usr/bin/tic -xe tmux-256color terminfo.src && tmux info | grep -e RGB -e Tc
