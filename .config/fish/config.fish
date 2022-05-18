@@ -64,9 +64,8 @@ function stoww
 end
 
 function brewBackup
-  rm ~/Brewfile
   brew tap Homebrew/bundle
-  brew bundle dump
+  brew bundle dump --force
   echo "Brew List Backed Up"
 end
 

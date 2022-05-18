@@ -17,6 +17,7 @@ Plug 'thisisrandy/vim-outdated-plugins'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
+Plug 'aymericbeaumet/vim-symlink'
 Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
 call plug#end()
@@ -94,8 +95,8 @@ let g:lightline#bufferline#unicode_symbols  = 1
 let g:lightline#trailing_whitespace#indicator = '•'
 
 function! Lightlinegit()
-    " let l:branch = fugitive#head()
-    " return l:branch ==# '' ? '' : 'Ψ ' . l:branch
+    let l:branch = FugitiveHead()
+    return l:branch ==# '' ? '' : ' ' . l:branch
 endfunction
 
 function! LightlineGitGutter()
@@ -296,7 +297,6 @@ function! s:Git(args)
 endfunction
 command! -nargs=1 Gitt call s:Git(<f-args>)
 nnoremap <C-]> :vsp $MYVIMRC<CR>
-"nnoremap <F12>  :silent! source $MYVIMRC<CR> <bar> :echo "nvim config reloaded"<CR>
 nnoremap <silent> gs :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if CocAction('hasProvider', 'hover')
