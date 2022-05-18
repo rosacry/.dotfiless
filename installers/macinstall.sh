@@ -19,5 +19,8 @@ brew update && brew upgrade
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' && mkdir ~/.config/nvim/plugged && nvim +PlugInstall +CocInstall +PlugUpgrade +PlugUpdate +CocUpdate +CocRebuild +qa!
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+curl -LO https://invisible-island.net/datafiles/current/terminfo.src.gz && gunzip terminfo.src.gz
+sudo /usr/bin/tic -xe tmux-256color terminfo.src
+tmux info | grep -e RGB -e Tc
 defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001

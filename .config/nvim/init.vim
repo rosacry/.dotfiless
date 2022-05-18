@@ -46,18 +46,8 @@ set shiftwidth=2
 set expandtab
 set laststatus=2
 set noshowmode
-if exists('+termguicolors')
-    set termguicolors
-endif
 syntax enable
 set background=dark
-let g:nord_cursor_line_number_background = 1
-let g:nord_bold_vertical_split_line = 1
-let g:nord_uniform_diff_background = 1
-let g:nord_uniform_status_lines = 1
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-let g:nord_underline = 1
 let g:lightline = {
   \ 'colorscheme': 'nord',
   \ 'active': {
@@ -120,6 +110,20 @@ endfunction
 function! NearestMethodOrFunction() abort
   return get(b:, 'vista_nearest_method_or_function', '')
 endfunction
+if exists('+termguicolors') && ($TERM == "st-256color" || $TERM == "tmux-256color")
+	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+	set termguicolors
+endif
+
+set cursorline
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+let g:nord_uniform_status_lines = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_cursor_line_number_background = 1
+let g:nord_bold_vertical_split_line = 1
 colorscheme nord
 let g:coc_global_extensions = [
   \ 'coc-ccls',
