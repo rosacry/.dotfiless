@@ -143,9 +143,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 If you are running OSX >= 10.15.5 with tmux >= 3.1b, follow these steps to enable true (256) colors
 ```
-curl -LO https://invisible-island.net/datafiles/current/terminfo.src.gz && gunzip terminfo.src.gz
-sudo /usr/bin/tic -xe tmux-256color terminfo.src
-tmux info | grep -e RGB -e Tc
+sudo curl -LO https://invisible-island.net/datafiles/current/terminfo.src.gz && gunzip terminfo.src.gz && /usr/bin/tic -xe tmux-256color terminfo.src && tmux info | grep -e RGB -e Tc
 ```
 #### Optional
 ##### Disable animations when opening and closing windows.
