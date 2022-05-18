@@ -16,11 +16,9 @@ Plug 'preservim/nerdtree'
 Plug 'thisisrandy/vim-outdated-plugins'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
+Plug 'ryanoasis/vim-devicons'
+Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
-"Plug 'projekt0n/github-nvim-theme'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-" Plug 'edkolev/tmuxline.vim'
 call plug#end()
 map! <F1> <nop>
 map! <F2> <nop>
@@ -48,6 +46,9 @@ set shiftwidth=2
 set expandtab
 set laststatus=2
 set noshowmode
+if exists('+termguicolors')
+    set termguicolors
+endif
 syntax enable
 set background=dark
 let g:nord_cursor_line_number_background = 1
@@ -57,29 +58,69 @@ let g:nord_uniform_status_lines = 1
 let g:nord_italic = 1
 let g:nord_italic_comments = 1
 let g:nord_underline = 1
-let g:airline#extensions#syntastic#enabled = 1
-let g:airline#extensions#whitespace#enabled = 0
-let g:airline_powerline_fonts = 1
-let g:airline_section_error = ''
-let g:airline_section_warning = ''
-let g:airline_symbols = {}
-let g:airline_symbols.notexists = ' ∄'
-let g:airline_symbols.dirty =' !'
-let g:airline_symbols.clean =''
-let g:airline_section_z = "%p%% %l/%L:%c"
- " let g:airline_extensions = ['ale', 'coc', 'fugitiveline', 'hunks', 'keymap', 'netrw', 'nvimlsp', 'po', 'quickfix', 'searchcount', 'term', 'wordcount']
+let g:lightline = {
+  \ 'colorscheme': 'nord',
+  \ 'active': {
+  \   'left': [['mode', 'paste'],
+  \            ['zoom', 'githunks', 'gitbranch', 'readonly', 'filename', 'method']],
+  \   'right': [['linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'trailing', 'lineinfo'],
+  \             ['percent'],
+  \             ['fileformat', 'fileencoding', 'filetype']]
+  \ },
+  \ 'tabline': {
+  \   'left': [['buffers']],
+  \   'right': [['close']]
+  \ },
+  \ 'component_expand': {
+  \   'linter_checking': 'lightline#ale#checking',
+  \   'linter_errors': 'lightline#ale#errors',
+  \   'linter_warnings': 'lightline#ale#warnings',
+  \   'linter_ok': 'lightline#ale#ok',
+  \   'trailing': 'lightline#trailing_whitespace#component',
+  \   'buffers': 'lightline#bufferline#buffers'
+  \ },
+  \ 'component_type': {
+  \   'linter_checking': 'left',
+  \   'linter_warnings': 'warning',
+  \   'linter_errors': 'error',
+  \   'linter_ok': 'left',
+  \   'trailing': 'error',
+  \   'buffers': 'tabsel'
+  \ },
+  \ 'component_function': {
+  \   'zoom': 'zoom#statusline',
+  \   'githunks': 'LightlineGitGutter',
+  \   'gitbranch': 'FugitiveHead',
+  \   'filename': 'LightlineFilename',
+  \   'method': 'NearestMethodOrFunction'
+  \ },
+  \   'separator': {'left': '', 'right': ''},
+  \   'subseparator': {'left': '', 'right': ''}
+  \ }
+let g:lightline#bufferline#enable_devicons  = 1
+let g:lightline#bufferline#min_buffer_count = 2
+let g:lightline#bufferline#show_number      = 1
+let g:lightline#bufferline#unicode_symbols  = 1
+let g:lightline#trailing_whitespace#indicator = '•'
+
+function! LightlineGitGutter()
+  if !get(g:, 'gitgutter_enabled', 0) || empty(FugitiveHead())
+    return ''
+  endif
+  let [ l:added, l:modified, l:removed ] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', l:added, l:modified, l:removed)
+endfunction
+
+function! LightlineFilename()
+  let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+  let modified = &modified ? ' [+]' : ''
+  return filename . modified
+endfunction
+
+function! NearestMethodOrFunction() abort
+  return get(b:, 'vista_nearest_method_or_function', '')
+endfunction
 colorscheme nord
-let g:airline_theme = 'nord'
-" let g:airline#extensions#tmuxline#enabled = 0
-" let g:tmuxline_preset = {
-"       \'a'    : '#S',
-"       \'b'    : '#W',
-"       \'c'    : '',
-"       \'win'  : '#I #W',
-"       \'cwin' : '#I #W',
-"       \'x'    : '',
-"       \'y'    : '%a %R',
-"       \'z'    : '#H'}
 let g:coc_global_extensions = [
   \ 'coc-ccls',
   \ 'coc-clangd',
