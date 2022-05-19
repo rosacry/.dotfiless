@@ -21,7 +21,7 @@ spacebar -m config spacing_left                25
 spacebar -m config spacing_right               20
 spacebar -m config text_font                   "$text_font:Light:14.0"
 spacebar -m config icon_font                   "$ic_font:Regular:14.0"
-spacebar -m config background_color            0x00$black
+spacebar -m config background_color            0xC8$black
 spacebar -m config foreground_color            0xff$white
 spacebar -m config power_icon_color            0xff$green
 spacebar -m config battery_icon_color          0xff$white

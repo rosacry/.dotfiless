@@ -1,5 +1,6 @@
 # My dotfiles
-![screenshot](wallpaper/adrenaline.png)
+![screenshot](wallpaper/neofetch.png)
+![screenshot2](wallpaper/ign_dudeOnBuilding3.png)
 
 # Contents
 - [Links to my environment and what I use](#links-to-my-environment-and-what-I-use)
