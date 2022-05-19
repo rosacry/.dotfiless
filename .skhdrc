@@ -85,7 +85,7 @@ alt - n : yabai -m query --spaces --space \
 # close focused window
 alt - w : yabai -m window --close
 # enter fullscreen mode for the focused container
-alt - 0x2A : yabai -m window --grid 1:1:0:0:1:1
+alt - 0x2A : yabai -m space --layout float && yabai -m window --grid 1:1:0:0:1:1
 
 # toggle window native fullscreen
 alt + shift - 0x2A : yabai -m window --toggle native-fullscreen

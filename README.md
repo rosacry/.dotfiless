@@ -30,7 +30,7 @@
 * [fish](https://fishshell.com/) - Shell
 * [neovim](https://neovim.io/) - Text Editor
   [vim-plug](https://github.com/junegunn/vim-plug) - Neovim Plugin Manager
-* [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode) - Font
+* [SauceCodePro Nerd Font](https://github.com/ryanoasis/nerd-fonts) - Font
 * [Wallpaper](wallpaper/adrenaline.png)
 
 ### OSX Specific
