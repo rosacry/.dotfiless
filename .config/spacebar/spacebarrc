@@ -37,6 +37,6 @@ spacebar -m config dnd_icon                    
 spacebar -m config clock_format                "%R  %m/%d/%y"
 spacebar -m config right_shell                 on
 spacebar -m config right_shell_icon            
-spacebar -m config right_shell_command         "whoami"
+spacebar -m config right_shell_command         "echo chrig"
 
 echo "spacebar configuration loaded.."

@@ -4,10 +4,10 @@ cmd + shift - j : yabai -m window --focus south
 cmd + shift - k : yabai -m window --focus north
 cmd + shift - l : yabai -m window --focus east
 # shift window in current workspace
-alt - y : yabai -m window --swap west || $(yabai -m window --display west; yabai -m display --focus west)
-alt - u : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
-alt - i : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
-alt - o : yabai -m window --swap east || $(yabai -m window --display east; yabai -m display --focus east)
+alt - y : yabai -m window --swap west #|| $(yabai -m window --display west; yabai -m display --focus west)
+alt - u : yabai -m window --swap south #|| $(yabai -m window --display south; yabai -m display --focus south)
+alt - i : yabai -m window --swap north #|| $(yabai -m window --display north; yabai -m display --focus north)
+alt - o : yabai -m window --swap east #|| $(yabai -m window --display east; yabai -m display --focus east)
 # set insertion point in focused container
 alt + shift - y : yabai -m window --insert west
 alt + shift - u : yabai -m window --insert south
@@ -92,7 +92,6 @@ alt + shift - 0x2A : yabai -m window --toggle native-fullscreen
 alt - return: open -n /Applications/kitty.app/
 
 #If padding is needed...
-#yabai -m config external_bar all:26:0
 
 #left/right windows
 alt - 0x29 : yabai -m window --grid 1:2:0:0:1:1
