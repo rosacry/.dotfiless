@@ -128,7 +128,7 @@ map! <F12> <nop>
 
 "-------------------------------------------------------------------------------------------
 
-"Formatting
+"Vim Settings
 set number relativenumber
 set smarttab
 set cindent
@@ -229,14 +229,14 @@ augroup END
 "Ale Settings
 let g:ale_linters= {
  \   'python': ['flake8'],
- \   'cpp': ['cc', 'gcc', 'clang'],
+ \   'cpp': ['clang' , 'cc', 'gcc'],
  \}
 let g:ale_fixers = {
  \   '*': ['remove_trailing_lines', 'trim_whitespace'],
  \   'python': ['autoflake' , 'autoimport' ,'black' , 'autopep8', 'isort' , 'reorder-python-imports' , 'yapf'],
  \}
 let g:ale_pattern_options_enabled = 1
-let g:ale_pattern_options = { '\.h$': { 'ale_linters': { 'cpp' : ['cc', 'gcc', 'clang'] } } }
+let g:ale_pattern_options = { '\.h$': { 'ale_linters': { 'cpp' : ['clang' , 'cc', 'gcc'] } } }
 let opts = '-std=c++17 -Wall -Wextra'
 let g:ale_cpp_cc_options    = opts
 let g:ale_cpp_gcc_options   = opts

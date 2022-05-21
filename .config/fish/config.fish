@@ -41,6 +41,7 @@ set -U fish_pager_color_description B3A06D
 set -U fish_pager_color_selected_background --background=brblack
 
 alias python='python3'
+alias vim='nvim'
 alias matlab="/Applications/MATLAB_R2021b.app/bin/matlab -nodesktop"
 
 # git add, commit and push commands in one line :)
