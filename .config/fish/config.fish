@@ -7,15 +7,11 @@ set EDITOR 'nvim'
 # Configure Jump
 status --is-interactive; and source (jump shell fish | psub)
 
-# Load all saved ssh keys
-/usr/bin/ssh-add --apple-load-keychain ^/dev/null
 
 #fish vi mode
 fish_vi_key_bindings
 set -g fish_escape_delay_ms 10
 
-# Fish syntax highlighting
-set -L
 # Colorscheme: Nord
 set -U fish_color_normal normal
 set -U fish_color_command 81a1c1
@@ -104,9 +100,3 @@ end
 
 # Install Starship
 starship init fish | source
-
-set fish_greeting ""
-
-ssh -T github
-
-clear

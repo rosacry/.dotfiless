@@ -20,6 +20,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'aymericbeaumet/vim-symlink'
 Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'Igorjan94/codeforces.vim'
 call plug#end()
 map! <F1> <nop>
 map! <F2> <nop>
@@ -213,7 +214,7 @@ set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 function CompileFileType()
   if (&ft=='c' || &ft=='cpp')
     echo "Compiling..."
-    :silent :!g++ -o  %:r.out % -std=c++11<Return>
+    :silent :!clang++ -Wall  -std=c++11 %:r.out % <Return>
   elseif (&ft=='java')
     echo "Compiling..."
     :silent :w | :silent :make
