@@ -1,3 +1,4 @@
+"Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-gitgutter'
@@ -22,33 +23,10 @@ Plug 'itchyny/lightline.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'Igorjan94/codeforces.vim'
 call plug#end()
-map! <F1> <nop>
-map! <F2> <nop>
-map! <F3> <nop>
-map! <F4> <nop>
-map! <F5> <nop>
-map! <F6> <nop>
-map! <F7> <nop>
-map! <F8> <nop>
-map! <F9> <nop>
-map! <F10> <nop>
-map! <F11> <nop>
-map! <F12> <nop>
-inoremap jk <ESC>
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-let g:prettier#autoformat = 0
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-set number relativenumber
-set smarttab
-set cindent
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set laststatus=2
-set noshowmode
-syntax enable
+
+"-------------------------------------------------------------------------------------------
+
+"Theme
 set background=dark
 let g:lightline = {
   \ 'colorscheme': 'nord',
@@ -123,7 +101,6 @@ if exists('+termguicolors') && ($TERM == "st-256color" || $TERM == "tmux-256colo
 	set termguicolors
 endif
 
-set cursorline
 let g:nord_italic = 1
 let g:nord_italic_comments = 1
 let g:nord_underline = 1
@@ -132,6 +109,46 @@ let g:nord_uniform_diff_background = 1
 let g:nord_cursor_line_number_background = 1
 let g:nord_bold_vertical_split_line = 1
 colorscheme nord
+
+"-------------------------------------------------------------------------------------------
+
+"Unbind Function Keys
+map! <F1> <nop>
+map! <F2> <nop>
+map! <F3> <nop>
+map! <F4> <nop>
+map! <F5> <nop>
+map! <F6> <nop>
+map! <F7> <nop>
+map! <F8> <nop>
+map! <F9> <nop>
+map! <F10> <nop>
+map! <F11> <nop>
+map! <F12> <nop>
+
+"-------------------------------------------------------------------------------------------
+
+"Formatting
+set number relativenumber
+set smarttab
+set cindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set laststatus=2
+set noshowmode
+set hidden
+set updatetime=100
+set shortmess+=c
+set signcolumn=yes
+set wrap linebreak
+set splitbelow
+set cursorline
+set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
+
+"-------------------------------------------------------------------------------------------
+
+"Coc Settings
 let g:coc_global_extensions = [
   \ 'coc-ccls',
   \ 'coc-clangd',
@@ -145,30 +162,6 @@ let g:coc_global_extensions = [
   \ 'coc-jedi',
   \ 'coc-json'
   \ ]
-let g:coc_snippet_next = '<Down>'
-let g:coc_snippet_prev = '<Up>'
-set hidden
-set updatetime=100
-set shortmess+=c
-set signcolumn=yes
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-inoremap <silent><expr> <c-space> coc#refresh()
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-nnoremap <silent> K :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
@@ -177,67 +170,63 @@ function! s:show_documentation()
   endif
 endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
 augroup mygroup
   autocmd!
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>ac  <Plug>(coc-codeaction)
-nmap <leader>qf  <Plug>(coc-fix-current)
-xmap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap if <Plug>(coc-funcobj-i)
-omap af <Plug>(coc-funcobj-a)
 command! -nargs=0 Format :call CocAction('format')
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
-nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
-nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
-nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
-nnoremap <silent> <space>j  :<C-u>CocNext<CR>
-nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap " ""<Esc>i
+function! s:show_documentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+"-------------------------------------------------------------------------------------------
+
+"Compiling and Running Commands
 augroup JavaCompile
   autocmd!
   autocmd Filetype java set makeprg=javac\ %
 augroup END
-set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-function CompileFileType()
+function Compile()
   if (&ft=='c' || &ft=='cpp')
     echo "Compiling..."
-    :silent :!clang++ -Wall  -std=c++11 %:r.out % <Return>
+    :silent :make %<
+    echo "Compiled"
   elseif (&ft=='java')
     echo "Compiling..."
     :silent :w | :silent :make
+    echo "Compiled"
   endif
 endfunction
-function CompileRunFileType()
-  call CompileFileType()
-  if (&ft=='c' || &ft=='cpp')
-    :!./%:r.out
-  elseif (&ft=='java')
-    :!java -cp %:p:h %:t:r
-  elseif (&ft=='python')
-    :!python3 %:r.py
+function Execute()
+    if (&ft=='c' || &ft=='cpp')
+      echo "Executing..."
+      :split term:// ./%<
+    elseif (&ft=='java')
+      echo "Executing..."
+      :split term:// java -cp %:p:h %:t:r
+    elseif (&ft=='python')
+      echo "Executing..."
+      :split term:// python3 %:r.py
   endif
 endfunction
-nnoremap <silent><F7> :call CompileRunFileType()<CR>
-map <F8> :cprevious<Return>
-map <F9> :cnext<Return>
-set wrap linebreak
+
+"-------------------------------------------------------------------------------------------
+
+"Removing Trailing Whitespace
 augroup TrailingWhitespace
   autocmd!
   autocmd BufWritePre * :%s/\s\+$//e
 augroup END
+
+"Ale Settings
 let g:ale_linters= {
  \   'python': ['flake8'],
  \   'cpp': ['cc', 'gcc', 'clang'],
@@ -253,23 +242,15 @@ let g:ale_cpp_cc_options    = opts
 let g:ale_cpp_gcc_options   = opts
 let g:ale_cpp_clang_options = opts
 let g:ale_fix_on_save = 1
-map K <Plug>(expand_region_expand)
-map J <Plug>(expand_region_shrink)
-let g:multi_cursor_select_all_word_key = '<C-b>'
-nnoremap <F5> :NERDTreeToggle<CR>
-nnoremap <F6> :NERDTreeCWD<CR>
+
+"-------------------------------------------------------------------------------------------
+
+"NerdTree Settings
 let NERDTreeShowHidden=1
-vnoremap y "*y
-nnoremap yy "*yy
-augroup CurrDirectory
-  autocmd!
-  autocmd BufWinEnter * lcd %:p:h
-augroup END
-nnoremap <F1> :Rename
-nnoremap <F2> :Move
-nnoremap <F3> :Wall
-nnoremap <F4> :Remove
-imap <silent><script><expr> <C-A> copilot#Accept("\<CR>")
+
+"-------------------------------------------------------------------------------------------
+
+"Copilot Settings
 let g:copilot_no_tab_map = v:true
 let g:toggle = 0
 function CopilotToggle(toggle)
@@ -283,7 +264,8 @@ function CopilotToggle(toggle)
     echo "Copilot Disabled"
   endif
 endfunction
-noremap <silent><F10> :call CopilotToggle(g:toggle)<CR>
+
+
 let g:copilot_filetypes = {
 \ '*': v:false,
 \ 'python': v:true,
@@ -291,23 +273,111 @@ let g:copilot_filetypes = {
 \ 'java': v:true,
 \ 'vim': v:true,
 \ }
+
+"-------------------------------------------------------------------------------------------
+
+"Git Gutter Settings
 function! s:Git(args)
   :Git add .
   :Git commit -m args
   :Git push
 endfunction
-command! -nargs=1 Gitt call s:Git(<f-args>)
-nnoremap <C-]> :vsp $MYVIMRC<CR>
-nnoremap <silent> gs :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
-endfunction
-let g:outdated_plugins_silent_mode = 1
+
+"-------------------------------------------------------------------------------------------
+
+"Changes current directory to directory of file in buffer
 augroup AutoChdir
   autocmd!
   autocmd BufEnter * if &buftype !=# 'terminal' | lchdir %:p:h | endif
 augroup END
+
+
+"-------------------------------------------------------------------------------------------
+
+"Key Mappings
+
+"show lines highlighted in visual mode
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+"Insert empty new line without entering insert mode
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O O<Esc>
+
+
+"-------------------------------------------------------------------------------------------
+
+"Function mappings
+nnoremap <F1> :Rename
+nnoremap <F2> :Move
+nnoremap <F3> :Wall
+nnoremap <F4> :Remove
+nnoremap <F5> :NERDTreeToggle<CR>
+nnoremap <F6> :NERDTreeCWD<CR>
+nnoremap <silent><F7> :call Compile()<CR>
+nnoremap <silent><F8> :call Execute()<CR>
+map <F9> :cnext<Return>
+map <F10> :cnext<Return>
+noremap <silent><F11> :call CopilotToggle(g:toggle)<CR>
+
+"-------------------------------------------------------------------------------------------
+
+"Non-key Mappings
+
+
+"-------------------------------------------------------------------------------------------
+
+"Plugin Key Mappings
+
+"Coc Mappings
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nnoremap <silent> gs :call <SID>show_documentation()<CR>
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>qf  <Plug>(coc-fix-current)
+xmap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap if <Plug>(coc-funcobj-i)
+omap af <Plug>(coc-funcobj-a)
+nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
+nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
+nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent> <space>j  :<C-u>CocNext<CR>
+nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
+nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ coc#refresh()
+inoremap <silent><expr> <S-TAB>
+      \ pumvisible() ? "\<C-p>" :
+      \ coc#refresh()
+inoremap <silent><expr> <c-space> coc#refresh()
+
+"Expand Region Mappings
+map K <Plug>(expand_region_expand)
+map J <Plug>(expand_region_shrink)
+
+"Accept Suggestion from Copilot
+imap <silent><script><expr> <C-A> copilot#Accept("\<CR>")
+"-------------------------------------------------------------------------------------------
+
+"Plugin Non-Key Mappings
+command! -nargs=1 Gitt call s:Git(<f-args>)
+
+"-------------------------------------------------------------------------------------------
+
+"Misc Key Mappings
+let g:multi_cursor_select_all_word_key = '<C-b>'
+vnoremap y "*y
+nnoremap yy "*yy
+nnoremap <C-]> :vsp $MYVIMRC<CR>
