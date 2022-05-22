@@ -287,10 +287,17 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap <leader>o o<Esc>
 nnoremap <leader>O O<Esc>
 
+"Refactoring
 let g:multi_cursor_select_all_word_key = '<C-b>'
+
+"Yanking to clipboard
 vnoremap y "*y
 nnoremap yy "*yy
+
 nnoremap <C-]> :sp $MYVIMRC<CR>
+
+"New line
+inoremap {<CR> {<CR>}<ESC>O
 
 "-------------------------------------------------------------------------------------------
 
