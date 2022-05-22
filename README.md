@@ -83,11 +83,11 @@ sudo spctl –master-disable
 ## Installation
 ### OSX Installer
 ```
-wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/macinstall.sh && ./macinstall.sh
+wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/macInstall.sh && ./macInstall.sh
 ```
 ### Linux Installer
 ```
-wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/linuxinstall.sh && ./linuxinstall.sh
+wget https://raw.githubusercontent.com/rosacry/.dotfiles/master/installers/linuxInstall.sh && ./linuxInstall.sh
 ```
 ### Manual Installation
 #### OSX
@@ -167,7 +167,7 @@ wip
 `cd` into the `.dotfiles` directory, then run the following shell script based on your OS
 ### OSX Uninstaller
 ```
-./uninstallers/macuninstall.sh
+./uninstallers/macUninstall.sh
 ```
 #### Brew Restore
 ```
@@ -175,7 +175,7 @@ wip
 ```
 ### Linux Uninstaller
 ```
-./uninstallers/linuxuninstall.sh
+./uninstallers/linuxUninstall.sh
 ```
 ### Debugging
 * try rebooting
