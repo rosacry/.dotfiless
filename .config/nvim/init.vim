@@ -62,6 +62,7 @@ set splitbelow
 set cursorline
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 set background=dark
+set autochdir
 
 "-------------------------------------------------------------------------------------------
 
