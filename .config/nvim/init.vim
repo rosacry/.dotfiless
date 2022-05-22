@@ -325,6 +325,9 @@ noremap <silent><F11> :call CopilotToggle(g:toggle)<CR>
 
 "Plugin Key Mappings
 
+"Ultisnips mappings
+let g:UltiSnipsExpandTrigger = "<CR>"
+
 "Coc Mappings
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -338,7 +341,7 @@ inoremap <silent><expr> <TAB>
       \ CheckBackspace() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 function! CheckBackspace() abort
   let col = col('.') - 1
