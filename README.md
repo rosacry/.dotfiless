@@ -1,5 +1,5 @@
 # My dotfiles
-![screenshot](neofetchScreenshot/neofetch.png)
+![screenshot](wallpaper/neofetch.png)
 ![screenshot2](wallpaper/ign_dudeOnBuilding3.png)
 
 # Contents
