@@ -63,7 +63,7 @@ set background=dark
 
 "-------------------------------------------------------------------------------------------
 
-"Compiling and Running Commands
+"Compiling and Executing Commands
 augroup JavaCompile
   autocmd!
   autocmd Filetype java set makeprg=javac\ %
@@ -105,12 +105,10 @@ augroup END
 "Ale Settings
 let g:ale_linters= {
  \   'python': ['flake8'],
- \   'cpp': ['clang'],
+ \   'cpp': ['clang', 'clangd', 'clangtidy', 'clangcheck'],
  \}
 let g:ale_fixers = {
  \   '*': ['remove_trailing_lines', 'trim_whitespace'],
- \   'java': ['autoflake' , 'autoimport' ,'black' , 'autopep8', 'isort', 'yapf'],
- \   'cpp': ['autoflake' , 'autoimport' ,'black' , 'autopep8', 'isort', 'yapf'],
  \   'python': ['autoflake' , 'autoimport' ,'black' , 'autopep8', 'isort' , 'reorder-python-imports' , 'yapf'],
  \}
 let g:ale_cpp_cc_options = '-std=c++17 -Wall -Wextra'
@@ -193,7 +191,8 @@ let g:lightline = {
   \ 'colorscheme': 'nord',
   \ 'active': {
   \   'left': [['mode', 'paste'],
-  \            ['zoom', 'githunks', 'gitbranch', 'readonly', 'filename', 'method'],['cocstatus']],
+  \            ['zoom', 'githunks', 'gitbranch', 'readonly', 'filename', 'method'],
+  \             ['cocstatus']],
   \   'right': [['linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'trailing', 'lineinfo'],
   \             ['percent'],
   \             ['fileformat', 'fileencoding', 'filetype']]
