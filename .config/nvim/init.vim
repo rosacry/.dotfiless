@@ -8,6 +8,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'amix/open_file_under_cursor.vim'
 Plug 'dense-analysis/ale'
+Plug 'maximbaz/lightline-ale'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
@@ -158,7 +159,6 @@ endfunction
 
 "Coc Settings
 let g:coc_global_extensions = [
-  \ 'coc-ccls',
   \ 'coc-clangd',
   \ 'coc-snippets',
   \ 'coc-pairs',
@@ -191,8 +191,7 @@ let g:lightline = {
   \ 'colorscheme': 'nord',
   \ 'active': {
   \   'left': [['mode', 'paste'],
-  \            ['zoom', 'githunks', 'gitbranch', 'readonly', 'filename', 'method'],
-  \             ['cocstatus']],
+  \            ['zoom', 'githunks', 'gitbranch', 'readonly', 'filename', 'method']],
   \   'right': [['linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok', 'trailing', 'lineinfo'],
   \             ['percent'],
   \             ['fileformat', 'fileencoding', 'filetype']]
@@ -210,20 +209,19 @@ let g:lightline = {
   \   'buffers': 'lightline#bufferline#buffers'
   \ },
   \ 'component_type': {
-  \   'linter_checking': 'left',
-  \   'linter_warnings': 'warning',
-  \   'linter_errors': 'error',
-  \   'linter_ok': 'left',
-  \   'trailing': 'error',
-  \   'buffers': 'tabsel'
+  \   'linter_checking': 'right',
+  \   'linter_warnings': 'right',
+  \   'linter_errors': 'right',
+  \   'linter_ok': 'right',
+  \   'trailing': 'right',
+  \   'buffers': 'right'
   \ },
   \ 'component_function': {
   \   'zoom': 'zoom#statusline',
   \   'githunks': 'LightlineGitGutter',
   \   'gitbranch': 'Lightlinegit',
   \   'filename': 'LightlineFilename',
-  \   'method': 'NearestMethodOrFunction',
-  \   'cocstatus': 'coc#status'
+  \   'method': 'NearestMethodOrFunction'
   \ },
   \   'separator': {'left': '', 'right': ''},
   \   'subseparator': {'left': '', 'right': ''}
@@ -298,6 +296,9 @@ nnoremap <C-]> :sp $MYVIMRC<CR>
 
 "New line
 inoremap {<CR> {<CR>}<ESC>O
+
+"Clear last search
+map <silent><C-C> :noh<CR>
 
 "-------------------------------------------------------------------------------------------
 

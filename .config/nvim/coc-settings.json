@@ -1,5 +1,6 @@
 {
   "suggest.noselect": false,
+  "diagnostic.enableMessage": false,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",
