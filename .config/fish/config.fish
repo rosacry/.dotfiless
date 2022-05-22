@@ -1,6 +1,5 @@
 source ~/.config/fish/alias.fish
 
-set PATH /opt/homebrew/bin:$PATH
 set JAVA_HOME $(/usr/libexec/java_home)
 set EDITOR 'nvim'
 
