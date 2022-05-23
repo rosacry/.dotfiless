@@ -26,7 +26,6 @@
 * [kitty](https://github.com/kovidgoyal/kitty/) - Terminal Emulator
 * [tmux](https://github.com/tmux/tmux/wiki) - Second Terminal Emulator
   * [tpm](https://github.com/tmux-plugins/tpm) - tmux Plugin Manager
-* [nord](https://www.nordtheme.com/) - Colorscheme
 * [starship](https://starship.rs/) - Shell Prompt
 * [fish](https://fishshell.com/) - Shell
 * [neovim](https://neovim.io/) - Text Editor
@@ -35,8 +34,6 @@
 * [Wallpaper](wallpaper/adrenaline.png)
 
 ### OSX Specific
-* [simple-bar](https://simple-bar.com/en/) - Status Bar
-* [spacebar](https://github.com/cmacrae/spacebar/) - Another Status Bar
 * [skhd](https://github.com/koekeishiya/skhd/) - Simple Hotkey Daemon
 * [yabai](https://github.com/xorpse/yabai/) - Window Manager
 * [Karabiner](https://karabiner-elements.pqrs.org/) - Keyboard Binder
@@ -59,7 +56,6 @@
 * [stow](https://github.com/rosacry/.dotfiles/blob/master/.stowrc)
 
 ### OSX Specific
-* [spacebar](https://github.com/rosacry/.dotfiles/blob/master/.config/spacebar/spacebarrc)
 * [skhd](https://github.com/rosacry/.dotfiles/blob/master/.skhdrc)
 * [yabai](https://github.com/rosacry/.dotfiles/blob/master/.yabairc)
 * [karabiner](https://github.com/rosacry/.dotfiles/blob/master/karabiner.json)

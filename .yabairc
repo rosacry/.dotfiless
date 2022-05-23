@@ -46,6 +46,3 @@ yabai -m config right_padding                25
 yabai -m config window_gap                   25
 
 echo "yabai configuration loaded.."
-# spacebar padding on top screen
-SPACEBAR_HEIGHT=$(spacebar -m config height)
-yabai -m config external_bar all:0:$SPACEBAR_HEIGHT
