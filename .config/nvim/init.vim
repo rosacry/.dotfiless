@@ -74,11 +74,11 @@ augroup END
 function Compile()
   if (&ft=='c' || &ft=='cpp')
     echo "Compiling..."
-    :silent :make %<
+    :silent :w | :make! %<
     echo "Compiled"
   elseif (&ft=='java')
     echo "Compiling..."
-    :silent :w | :silent :make
+    :silent :w | :make!
     echo "Compiled"
   endif
 endfunction
