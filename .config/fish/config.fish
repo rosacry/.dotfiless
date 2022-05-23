@@ -11,33 +11,33 @@ status --is-interactive; and source (jump shell fish | psub)
 fish_vi_key_bindings
 set -g fish_escape_delay_ms 10
 
-# Colorscheme: Nord
+# Colorscheme: (Almost) No Colors
 set -U fish_color_normal normal
-set -U fish_color_command 81a1c1
-set -U fish_color_quote a3be8c
-set -U fish_color_redirection b48ead
-set -U fish_color_end 88c0d0
-set -U fish_color_error ebcb8b
-set -U fish_color_param eceff4
-set -U fish_color_comment 434c5e
-set -U fish_color_match --background=brblue
-set -U fish_color_selection white --bold --background=brblack
-set -U fish_color_search_match bryellow --background=brblack
-set -U fish_color_history_current --bold
-set -U fish_color_operator 00a6b2
-set -U fish_color_escape 00a6b2
-set -U fish_color_cwd green
-set -U fish_color_cwd_root red
-set -U fish_color_valid_path --underline
-set -U fish_color_autosuggestion 4c566a
-set -U fish_color_user brgreen
+set -U fish_color_command
+set -U fish_color_quote
+set -U fish_color_redirection
+set -U fish_color_end
+set -U fish_color_error
+set -U fish_color_param
+set -U fish_color_comment
+set -U fish_color_match
+set -U fish_color_selection --reverse
+set -U fish_color_search_match --reverse
+set -U fish_color_history_current
+set -U fish_color_operator
+set -U fish_color_escape
+set -U fish_color_cwd normal
+set -U fish_color_cwd_root normal
+set -U fish_color_valid_path
+set -U fish_color_autosuggestion brblack
+set -U fish_color_user normal
 set -U fish_color_host normal
-set -U fish_color_cancel --reverse
-set -U fish_pager_color_prefix normal --bold --underline
-set -U fish_pager_color_progress brwhite --background=cyan
+set -U fish_color_cancel
+set -U fish_pager_color_prefix --underline
+set -U fish_pager_color_progress brblack
 set -U fish_pager_color_completion normal
-set -U fish_pager_color_description B3A06D
-set -U fish_pager_color_selected_background --background=brblack
+set -U fish_pager_color_description brblack
+set -U fish_pager_color_selected_background --reverse
 
 alias python='python3'
 alias vim='nvim'

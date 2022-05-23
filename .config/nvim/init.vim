@@ -22,7 +22,7 @@ Plug 'tpope/vim-surround'
 Plug 'ryanoasis/vim-devicons'
 Plug 'aymericbeaumet/vim-symlink'
 Plug 'itchyny/lightline.vim'
-Plug 'arcticicestudio/nord-vim'
+Plug 'Mofiqul/vscode.nvim'
 Plug 'Igorjan94/codeforces.vim'
 call plug#end()
 
@@ -182,7 +182,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 "Lightline Settings
 let g:lightline = {
-  \ 'colorscheme': 'nord',
+  \ 'colorscheme': 'one',
   \ 'active': {
   \   'left': [['mode', 'paste'],
   \            ['zoom', 'githunks', 'gitbranch', 'readonly', 'filename', 'method']],
@@ -258,14 +258,16 @@ endif
 
 "Colorscheme
 
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-let g:nord_underline = 1
-let g:nord_uniform_status_lines = 1
-let g:nord_uniform_diff_background = 1
-let g:nord_cursor_line_number_background = 1
-let g:nord_bold_vertical_split_line = 1
-colorscheme nord
+" Vim-Script:
+" For dark theme
+let g:vscode_style = "dark"
+" Enable transparent background
+let g:vscode_transparency = 1
+" Enable italic comment
+let g:vscode_italic_comment = 1
+" Disable nvim-tree background color
+let g:vscode_disable_nvimtree_bg = v:true
+colorscheme vscode
 
 "-------------------------------------------------------------------------------------------
 
