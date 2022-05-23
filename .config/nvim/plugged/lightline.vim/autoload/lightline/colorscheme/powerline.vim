@@ -1,3 +1,10 @@
+" =============================================================================
+" Filename: autoload/lightline/colorscheme/powerline.vim
+" Author: itchyny
+" License: MIT License
+" Last Change: 2013/09/07 15:54:41.
+" =============================================================================
+
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 let s:p.normal.left = [ ['#282c34', '#98c379', 'bold'], ['white', 'gray4'] ]
 let s:p.normal.right = [ ['#282c34', '#98c379', 'bold'], ['gray9', 'gray4'], ['gray8', 'gray2'] ]
