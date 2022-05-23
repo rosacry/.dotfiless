@@ -182,7 +182,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 "Lightline Settings
 let g:lightline = {
-  \ 'colorscheme': 'one',
+  \ 'colorscheme': 'airlineTheme',
   \ 'active': {
   \   'left': [['mode', 'paste'],
   \            ['zoom', 'githunks', 'gitbranch', 'readonly', 'filename', 'method']],
