@@ -74,7 +74,7 @@ augroup END
 function Compile()
   if (&ft=='c' || &ft=='cpp')
     echo "Compiling..."
-    :silent :w | :make! %<
+    :silent :w | :make! CC=clang %<
     echo "Compiled"
   elseif (&ft=='java')
     echo "Compiling..."
@@ -331,6 +331,17 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> gs :call <SID>show_documentation()<CR>
+nmap <leader>rn <Plug>(coc-rename)
+nmap <silent> <C-s> <Plug>(coc-range-select)
+xmap <silent> <C-s> <Plug>(coc-range-select)
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ CheckBackspace() ? "\<TAB>" :
